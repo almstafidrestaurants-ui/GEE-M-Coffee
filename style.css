@@ -1,0 +1,3703 @@
+/* =====================================================
+   خطوط شاشة الرئيسية
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+/* =====================================================
+   RESET
+   تصفير إعدادات المتصفح
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   HTML
+===================================================== */
+
+html {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+
+    margin: 0;
+
+    width: 100%;
+    min-height: 100vh;
+
+    background: #000;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    overflow-x: hidden;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* =====================================================
+   MOBILE MENU - الحاوية العامة
+===================================================== */
+
+.mobile-menu {
+    position: relative;
+   width: 100% !important;
+    max-width: 390px !important;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: #100503;
+    overflow-x: hidden;
+}
+/* =====================================================
+   SPLASH SCREEN
+   شاشة البداية تبقى دائماً بحجم شاشة الهاتف
+===================================================== */
+
+.splash-screen {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    /* مهم جداً */
+    height: 100vh;
+    height: 100dvh;
+
+    overflow: hidden;
+
+    z-index: 9999;
+}
+
+/* عندما تنتهي شاشة البداية */
+.splash-screen.hidden {
+    display: none !important;
+}
+
+/* =====================================================
+   BACKGROUND IMAGE
+   الصورة موجودة بالـ HTML
+===================================================== */
+
+.background-image {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    z-index: 0;
+}
+
+
+/* =====================================================
+   BACKGROUND OVERLAY
+===================================================== */
+
+.background-overlay {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(10, 3, 1, 0.15),
+            rgba(10, 3, 1, 0.25),
+            rgba(10, 3, 1, 0.55)
+        );
+
+    z-index: 1;
+}
+
+
+/* =====================================================
+   SPLASH CONTENT
+===================================================== */
+
+.splash-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo-area {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-top: 30px;
+     margin-bottom: -10px;
+}
+
+
+.main-logo {
+
+    width: 190px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(
+            0 0 12px
+            rgba(255, 180, 80, 0.4)
+        );
+}
+
+
+/* =====================================================
+   SHOP DESCRIPTION
+===================================================== */
+
+.shop-description {
+
+    margin-top: 18px;
+
+    color: #f5dfbb;
+
+    font-size: 10px;
+
+    letter-spacing: 2.5px;
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   SEPARATOR
+===================================================== */
+
+.separator {
+
+    width: 55%;
+
+    margin-top: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+}
+
+
+.separator span {
+
+    flex: 1;
+
+    height: 1px;
+
+    background: #d7a45b;
+}
+
+.separator-icon {
+    width: 20px !important;
+    height: 20px !important;
+
+    border: 1px solid #d7a45b !important;
+    border-radius: 50% !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    color: #d7a45b !important;
+    font-size: 7px !important;
+
+    margin-bottom: 0 !important;
+}
+
+/* =====================================================
+   COFFEE LOADER
+===================================================== */
+
+.coffee-loader {
+
+    width: 125px;
+    height: 125px;
+
+    margin-top: 25px;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+/* =====================================================
+   الحلقة الذهبية الدوارة
+   الدائرة السوداء تبقى ثابتة
+===================================================== */
+
+.coffee-loader-ring {
+    position: absolute;
+
+    width: 128px;
+    height: 128px;
+
+    border-radius: 50%;
+
+    /*
+       الحلقة الذهبية ليست دائرة كاملة بنفس اللون
+       حتى تعطي إحساس الدوران مثل الصورة المرجعية
+    */
+
+    border: 4px solid rgba(180, 105, 25, 0.65);
+
+    border-top-color: #fff0b0;
+
+    border-right-color: #f4b84e;
+
+    border-bottom-color: #b96b1d;
+
+    border-left-color: transparent;
+
+    background: transparent;
+
+    /*
+       دوران الحلقة بالكامل
+    */
+
+    animation:
+        rotateGoldenRing 2s linear infinite;
+
+    /*
+       الإضاءة الذهبية
+    */
+
+    box-shadow:
+
+        0 0 5px
+        rgba(255, 184, 70, 0.95),
+
+        0 0 12px
+        rgba(255, 157, 35, 0.7),
+
+        0 0 22px
+        rgba(255, 140, 20, 0.35);
+}
+
+
+/* =====================================================
+   دوران الحلقة الذهبية
+===================================================== */
+
+@keyframes rotateGoldenRing {
+
+    from {
+
+        transform: rotate(0deg);
+
+    }
+
+    to {
+
+        transform: rotate(360deg);
+
+    }
+
+}
+
+
+/* =====================================================
+   الدائرة السوداء الداخلية
+   ثابتة ولا تدور
+===================================================== */
+
+.coffee-loader-center {
+
+    position: absolute;
+
+    z-index: 5;
+
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+
+    background: #100705;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+
+}
+
+
+/* =====================================================
+   صورة الفنجان
+   ثابتة تماماً
+===================================================== */
+
+.coffee-loader-icon {
+
+      width: 140px;
+    height: 140px;
+    object-fit: contain;
+
+    display: block;
+
+}
+
+/* =====================================================
+   حركة نقطة الضوء
+===================================================== */
+
+@keyframes rotateLight {
+
+    from {
+
+        transform:
+            translateX(-50%)
+            rotate(0deg);
+
+    }
+
+    to {
+
+        transform:
+            translateX(-50%)
+            rotate(360deg);
+
+    }
+
+}
+
+
+/* =====================================================
+   CENTER
+   الفنجان ثابت
+===================================================== */
+
+.coffee-loader-center {
+
+    position: absolute;
+
+    z-index: 5;
+
+    width: 108px;
+    height: 108px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: transparent;
+
+}
+
+
+
+/* =====================================================
+   COFFEE ICON
+===================================================== */
+
+.coffee-icon {
+
+    position: relative;
+
+    font-size: 38px;
+
+    color: #f1c678;
+}
+
+
+/* =====================================================
+   STEAM
+===================================================== */
+
+.steam {
+
+    position: absolute;
+
+    top: -18px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 17px;
+
+    color: #f1c678;
+}
+
+
+/* =====================================================
+   LOADING TEXT
+===================================================== */
+
+.loading-text {
+
+    margin-top: 16px;
+
+    color: #f2dfbf;
+
+    font-size: 13px;
+
+    letter-spacing: 1.5px;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   LOADING %
+===================================================== */
+
+.loading-percent {
+
+    margin-top: 5px;
+
+    color: #e9b45e;
+
+    font-size: 17px;
+
+    font-weight: bold;
+}
+
+/* =====================================================
+   COFFEE CUP
+===================================================== */
+
+.coffee-cup-area {
+    position: absolute;
+
+    left: 50%;
+
+    /* يبقى مربوط بأسفل شاشة البداية */
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-end;
+
+    z-index: 3;
+}
+
+.coffee-cup {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(
+            0 10px 18px
+            rgba(0, 0, 0, 0.65)
+        );
+}
+/* =========================================================
+   GM COFFEE - HOME SCREEN
+   شاشة الرئيسية - Mobile Only
+========================================================= */
+
+
+/* =========================================================
+   HOME SCREEN
+   الحاوية الرئيسية لشاشة الرئيسية
+========================================================= */
+
+.home-screen {
+
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+
+    min-height: 100vh;
+
+    overflow: hidden;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #1b0b05;
+
+}
+/* =====================================================
+   MENU SCREEN
+   مخفية بالكامل أثناء شاشة البداية
+===================================================== */
+
+.menu-screen {
+    position: relative;
+
+    display: none !important;
+
+    width: 100%;
+    min-height: 100vh;
+
+    background: #160b05;
+
+    padding: 0 8px 30px;
+
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+    padding-bottom: 75px;
+}
+/* =========================================================
+   HOME BACKGROUND
+   صورة الخلفية
+   لا نغيّر الصورة نفسها
+========================================================= */
+
+.home-background {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center center;
+
+    z-index: 1;
+}
+
+
+/* =========================================================
+   HOME OVERLAY
+   طبقة خفيفة فوق الصورة
+========================================================= */
+
+.home-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0,0,0,0.08),
+            rgba(0,0,0,0.05) 50%,
+            rgba(0,0,0,0.18)
+        );
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   HOME CONTENT
+   كل محتوى الصفحة
+========================================================= */
+
+.home-content {
+
+    position: relative;
+
+    background: transparent;
+    z-index: 3;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    box-sizing: border-box;
+
+    padding:
+
+        42px
+
+        14px
+
+        22px;
+
+}
+
+.home-title,
+.home-title-big,
+.home-subtitle {
+    text-shadow:
+        0 2px 5px rgba(0, 0, 0, 1),
+        0 4px 15px rgba(0, 0, 0, 0.9),
+        0 8px 25px rgba(0, 0, 0, 0.6);
+}
+/* =========================================================
+   LOGO
+   تكبير شعار GM
+========================================================= */
+
+.home-logo {
+
+    width: 190px;
+
+    max-width: 42vw;
+
+    height: auto;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin-top: -10px;
+
+    margin-bottom: 1px;
+
+    filter:
+        drop-shadow(
+            0 3px 8px
+            rgba(0,0,0,0.45)
+        );
+
+    flex-shrink: 0;
+    box-shadow: 
+        rgba(0,0,0,0.90);
+}
+
+
+/* =========================================================
+   START WITH
+========================================================= */
+
+.home-title {
+
+    color: #fff8e8;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: 39px;
+
+    font-weight: 500;
+
+    font-style: italic;
+
+    line-height: 0.9;
+
+    letter-spacing: -0.5px;
+
+    margin:0 0 1px 0;
+    padding: 0;
+    text-shadow:
+
+        0 2px 7px
+        rgba(0,0,0,0.55);
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   SOMETHING
+   DELICIOUS
+========================================================= */
+
+.home-title-big {
+
+    color: #fff9ed;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: 47px;
+
+    font-weight: 700;
+
+    line-height: 0.83;
+
+    letter-spacing: -1.2px;
+
+    margin:
+
+        2px
+
+        0
+
+        0
+
+        0;
+
+    padding: 0;
+
+    text-shadow:
+
+        0 3px 9px
+        rgba(0,0,0,0.6);
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   COFFEE • SNACKS • DESSERTS
+========================================================= */
+
+.home-subtitle {
+
+    color: #fff9ec;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 3.5px;
+
+    line-height: 1;
+
+    margin:
+
+        27px
+
+        0
+
+        0
+
+        0;
+
+    padding: 0;
+
+    white-space: nowrap;
+
+    text-shadow:
+
+        0 2px 6px
+        rgba(0,0,0,0.65);
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   EXPLORE BUTTON
+   الزر يبقى بنفس الشكل الأساسي
+========================================================= */
+/* =========================================================
+   EXPLORE BUTTON
+========================================================= */
+
+.explore-button {
+  width: 260px;   
+    height: 56px;   
+    bottom: 58px;
+    font-size: 13px;
+    gap: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 82%;
+    border: none;
+    border-radius: 35px;
+    background:
+        linear-gradient(
+            135deg,
+            #e6a83f,
+            #ffd078
+        );
+
+    color: #3a1d08;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0 20px;
+
+    z-index: 5;
+
+    /* ظل أسود ناعم حول الزر */
+    box-shadow:
+
+        0 0 0 10px
+        rgba(0,0,0,0.20),
+
+        0 8px 25px
+        rgba(0,0,0,0.45);
+
+}
+
+
+/* السهم الموجود داخل الزر */
+
+.explore-button span {
+
+    font-size: 23px;
+
+    line-height: 1;
+
+    font-weight: 400;
+
+}
+
+
+/* =========================================================
+   تأثير الضغط على الزر
+========================================================= */
+
+.explore-button:active {
+
+    transform:
+        translateX(-50%)
+        scale(0.97);
+
+}
+
+
+/* =========================================================
+   الزخرفة الموجودة أسفل الزر
+========================================================= */
+
+.home-decoration {
+
+    position: absolute;
+
+    bottom: 24px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #f4c46b;
+
+    font-size: 15px;
+
+    letter-spacing: 12px;
+
+    white-space: nowrap;
+
+    text-shadow:
+
+        0 2px 5px
+        rgba(0,0,0,0.5);
+
+}
+/* =========================================================
+   HOME TEXT PANEL
+   خلفية سوداء ناعمة ومندمجة مع الصورة
+========================================================= */
+.home-text-panel {
+
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    padding: 10px 8px 18px;
+
+    background: linear-gradient(
+        to bottom,
+
+        rgba(0, 0, 0, 0.08) 0%,
+
+        rgba(0, 0, 0, 0.35) 20%,
+
+        rgba(0, 0, 0, 0.92) 50%,
+
+        rgba(0, 0, 0, 0.40) 80%,
+
+        rgba(0, 0, 0, 0.08) 100%
+    );
+
+    border-radius: 0;
+    border: none;
+}
+
+/* =========================================================
+   MENU HEADER
+========================================================= */
+
+.categories-header {
+    position: relative;
+display: flex;
+    width: 100%;
+
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+
+    border-radius:
+        0
+        0
+        22px
+        22px;
+}
+
+
+/* =========================================================
+   HEADER IMAGE
+========================================================= */
+
+.categories-header-bg {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+    padding: 0;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.menu-back-button {
+    position: absolute;
+
+    top: 16px;
+    left: 14px;
+
+    width: 43px;
+    height: 43px;
+
+    border: 1px solid #dca94f;
+
+    border-radius: 50%;
+
+    background:
+        rgba(35, 16, 6, 0.72);
+
+    color: #f2bd55;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 25px;
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    z-index: 20;
+
+    backdrop-filter: blur(3px);
+
+    box-shadow:
+        0 3px 10px
+        rgba(0, 0, 0, 0.45);
+}
+
+.menu-back-button:active {
+    transform: scale(0.92);
+}
+
+
+/* شبكة الأقسام */
+.categories-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* آخر الأقسام */
+.categories-grid::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+}
+/* =========================================================
+   CATEGORY CARD
+========================================================= */
+
+.category-card {
+    position: relative;
+    width: 100%;
+    height: 135px;
+    min-height: 135px;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    border-radius: 18px;
+    border: 1px solid rgba(214, 160, 70, 0.65);
+
+    background: #f4e5ca;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+}
+
+.category-card:active {
+    transform: scale(0.97);
+
+    box-shadow:
+        0 2px 8px
+        rgba(0, 0, 0, 0.4);
+}
+
+
+/* =========================================================
+   CATEGORY IMAGE
+========================================================= */
+.category-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.category-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* =========================================================
+   IMAGE FADE
+========================================================= */
+.category-image::after {
+    display: none;
+}
+
+
+/* =========================================================
+   CATEGORY INFO
+========================================================= */
+.category-info {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 65px !important;
+
+    padding: 7px 10px !important;
+    box-sizing: border-box !important;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 248, 230, 0.92),
+        rgba(255, 248, 230, 0.70),
+        rgba(255, 248, 230, 0)
+    ) !important;
+
+    z-index: 5 !important;
+}
+
+/* =========================================================
+   CATEGORY ICON
+========================================================= */
+
+.category-icon {
+    display: block;
+
+    width: 35px;
+    height: 35px;
+
+    object-fit: contain;
+
+    margin: 0 0 3px;
+}
+
+
+/* =========================================================
+   CATEGORY NAME
+========================================================= */
+/* English */
+.category-name {
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #160b05 !important;
+    line-height: 1.1 !important;
+    text-shadow: none !important;
+}
+
+.category-card:nth-child(1) .category-name,
+.category-card:nth-child(2) .category-name,
+.category-card:nth-child(3) .category-name,
+.category-card:nth-child(4) .category-name,
+.category-card:nth-child(6) .category-name,
+.category-card:nth-child(7) .category-name {
+
+    font-size: 15px;
+
+    letter-spacing: -0.6px;
+
+    line-height: 1.05;
+}
+/* Arabic */
+.category-arabic {
+    font-family: Arial, Tahoma, sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #160b05 !important;
+    line-height: 1.3 !important;
+    margin-top: 2px !important;
+}
+
+
+
+/* =========================================================
+   CATEGORY ARABIC
+========================================================= */
+/* Arabic */
+.category-arabic {
+    font-family: Arial, "Tahoma", sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #160b05 !important;
+    line-height: 1.3 !important;
+    text-shadow: none !important;
+}
+
+
+
+/* Better spacing */
+.category-name + .category-arabic {
+    margin-top: 2px !important;
+}
+/* =========================================================
+   CATEGORY ARROW
+========================================================= */
+.category-arrow {
+    position: absolute;
+      left: 10px !important;
+    bottom: 10px !important;
+
+    top:90Px !important;
+    right: auto !important;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    background: #5a2e12;
+    color: #f2bd55;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+    z-index: 10 !important;
+}
+/* =========================================================
+   07 - FOOTER
+========================================================= */
+
+.categories-footer {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    margin-top: 14px;
+
+    padding: 18px 8px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #32180b,
+            #1e0d06
+        );
+
+    border:
+        1px solid
+        rgba(221, 165, 70, 0.55);
+}
+
+
+.footer-item {
+    position: relative;
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: #dca94f;
+}
+
+
+.footer-item:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+    top: 5px;
+
+    width: 1px;
+    height: 70px;
+
+    background:
+        rgba(220, 169, 79, 0.6);
+}
+
+
+.footer-icon {
+    width: 42px;
+    height: 42px;
+
+    border:
+        1px solid
+        #dca94f;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 21px;
+
+    margin-bottom: 7px;
+}
+
+
+.footer-item span,
+.footer-item strong {
+    display: block;
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    line-height: 1.3;
+}
+
+.footer-item span {
+    color: #dca94f;
+}
+
+.footer-item strong {
+    color: #e6c47b;
+
+    font-weight: 500;
+}
+
+/* =========================================================
+   BACK BUTTON - MENU
+========================================================= */
+
+.back-button {
+    position: absolute;
+
+    top: 16px;
+    left: 16px;
+
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+
+    border: 1px solid #e5b75d;
+
+    background: rgba(20, 8, 3, 0.75);
+
+    color: #f2bd55;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 18px;
+    font-weight: 300;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 20;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.35);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+/* عند الضغط */
+
+.back-button:active {
+    transform: scale(0.92);
+
+    background: rgba(20, 8, 3, 0.95);
+}
+/* =====================================================
+   BOTTOM NAVIGATION
+   يظهر فقط مع شاشة الأقسام
+===================================================== */
+
+.bottom-nav {
+    position: fixed;
+
+    left: 50%;
+    bottom: 0;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+    max-width: 390px;
+
+    height: 58px;
+
+    background: rgba(35, 15, 7, 0.98);
+
+    border-top: 1px solid rgba(218, 164, 72, 0.55);
+
+    display: none;
+
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 3px 12px;
+
+    z-index: 9999;
+
+    box-shadow:
+        0 -4px 15px rgba(0, 0, 0, 0.35);
+
+    backdrop-filter: blur(8px);
+}
+
+
+/* =====================================================
+   يظهر فقط عندما تكون شاشة الأقسام مفتوحة
+===================================================== */
+
+body.menu-active .bottom-nav {
+    display: flex;
+}
+
+
+/* =====================================================
+   أزرار الشريط
+===================================================== */
+
+.bottom-nav-item {
+    width: 80px;
+    height: 50px;
+
+    border: none;
+    background: transparent;
+
+    color: #e7c27c;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 2px;
+
+    cursor: pointer;
+
+    padding: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* =====================================================
+   ICON
+===================================================== */
+
+.bottom-nav-icon {
+    width: 28px;
+    height: 27px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #e5b04e;
+
+    font-size: 22px;
+
+    line-height: 1;
+}
+
+
+/* =====================================================
+   TEXT
+===================================================== */
+
+.bottom-nav-text {
+    color: #e9d2a6;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+
+    line-height: 1;
+
+    text-transform: uppercase;
+}
+
+
+/* =====================================================
+   PRESS
+===================================================== */
+
+.bottom-nav-item:active .bottom-nav-icon {
+    transform: scale(0.85);
+    color: #ffd06a;
+}
+
+/* =====================================================
+   MODAL QUANTITY
+===================================================== */
+
+.modal-quantity-title {
+
+    margin-top: 5px;
+
+    color: #5a3b26;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 16px;
+
+}
+
+
+/* =====================================================
+   QUANTITY BOX
+===================================================== */
+
+.modal-quantity {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    margin-top: 7px;
+
+}
+
+
+.modal-quantity button {
+
+    width: 34px;
+
+    height: 34px;
+
+    border-radius: 50%;
+
+    border: 1px solid #d6a046;
+
+    background: #160b05;
+
+    color: #d6a046;
+
+    font-size: 22px;
+
+    line-height: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+}
+
+
+.modal-quantity span {
+
+    min-width: 25px;
+
+    color: #3a1d0c;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+}
+
+
+/* =====================================================
+   ADD TO CART BUTTON
+===================================================== */
+
+.modal-add-cart-button {
+
+    width: calc(100% - 30px);
+
+    height: 46px;
+
+    margin: 14px 15px 16px;
+
+    border: 1px solid #d6a046;
+
+    border-radius: 12px;
+
+    background: #160b05;
+
+    color: #d6a046;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+}
+
+
+.modal-add-cart-button:active {
+
+    transform: scale(0.98);
+
+    background: #d6a046;
+
+    color: #160b05;
+
+}
+/* =====================================================
+   ITEMS SCREEN
+   MOBILE WIDTH ONLY
+===================================================== */
+
+.items-screen {
+    position: relative;
+
+    width: 390px !important;
+    max-width: 390px !important;
+
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    margin: 0 auto;
+
+    background: #160b05;
+
+    padding: 0 8px 85px;
+
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+}
+
+
+/* =====================================================
+   ITEMS HEADER
+===================================================== */
+
+.items-category-header {
+    position: relative;
+
+    width: 100%;
+    height: 68px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 10px;
+
+    border-bottom: 1px solid rgba(214,160,70,0.45);
+
+    box-sizing: border-box;
+}
+
+
+.items-back-button {
+
+    position: absolute;
+
+    left: 5px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(214,160,70,0.7);
+
+    background: rgba(20,8,3,0.95);
+
+    color: #d6a046;
+
+    font-size: 23px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    z-index: 10;
+}
+
+
+.items-category-title {
+
+    color: #d6a046;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 26px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   ITEMS GRID
+===================================================== */
+
+.items-grid {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 9px;
+
+    box-sizing: border-box;
+}
+
+/* =====================================================
+   ITEM CARD
+===================================================== */
+
+.menu-item-card {
+
+    position: relative !important;
+
+    width: 100% !important;
+
+    height: 195px !important;
+
+    min-width: 0 !important;
+
+    overflow: hidden !important;
+
+    box-sizing: border-box !important;
+
+    border-radius: 17px !important;
+
+    border: 1px solid rgba(214,160,70,0.65) !important;
+
+    background: #f4e5ca !important;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.35) !important;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease;
+}
+
+
+.menu-item-card:active {
+    transform: scale(0.97);
+}
+
+
+/* =====================================================
+   ITEM IMAGE
+===================================================== */
+
+.menu-item-image {
+
+    position: absolute !important;
+
+    top: 0 !important;
+    left: 0 !important;
+
+    width: 100% !important;
+   height: 138px !important;
+
+    overflow: hidden !important;
+
+    background: #ead9bd !important;
+
+    z-index: 1 !important;
+}
+
+
+.menu-item-image img {
+
+    width: 100% !important;
+    height: 100% !important;
+
+    display: block !important;
+
+    object-fit: cover !important;
+}
+
+
+/* =====================================================
+   ITEM INFO
+===================================================== */
+
+.menu-item-info {
+   height: 57px !important;
+    padding: 3px 42px 5px 8px !important;
+    justify-content: center !important;
+    position: absolute !important;
+   font-family: Georgia, "Times New Roman", serif !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+
+
+    box-sizing: border-box !important;
+
+    background: #f4e5ca !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    align-items: center !important;
+
+    z-index: 2 !important;
+}
+
+
+/* =====================================================
+   PLUS BUTTON
+===================================================== */
+.add-to-cart-button {
+    position: absolute !important;
+
+    right: 7px !important;
+    bottom: 7px !important;
+
+    width: 30px !important;
+    height: 30px !important;
+
+    min-width: 30px !important;
+    min-height: 30px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    border-radius: 50% !important;
+
+    border: 2px solid #d6a046 !important;
+
+    background: #160b05 !important;
+
+    color: #d6a046 !important;
+
+    font-family: Arial, sans-serif !important;
+
+    font-size: 19px !important;
+
+    font-weight: bold !important;
+
+    line-height: 1 !important;
+
+    text-align: center !important;
+
+    cursor: pointer !important;
+
+    z-index: 999 !important;
+
+    box-sizing: border-box !important;
+
+    box-shadow:
+        0 2px 8px rgba(0,0,0,0.5) !important;
+}
+
+
+/* عند الضغط */
+
+.add-to-cart-button:active {
+    transform: scale(0.88);
+}
+
+
+/* عند تمرير الماوس */
+
+.add-to-cart-button:hover {
+    background: #d6a046 !important;
+    color: #160b05 !important;
+}
+
+/* =====================================================
+   ITEM IMAGE
+===================================================== */
+
+.menu-item-image {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 148px;
+
+    overflow: hidden;
+
+    background: #ead9bd;
+
+    z-index: 1;
+}
+
+
+.menu-item-image img {
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =====================================================
+   ITEM INFO
+===================================================== */
+
+.menu-item-info {
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 57px;
+
+    padding: 5px 8px;
+
+    box-sizing: border-box;
+
+    background: #f4e5ca;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 2;
+}
+
+
+.menu-item-name {
+    font-family: Georgia, "Times New Roman", serif !important;
+   font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 1.15 !important;
+
+    color: #160b05 !important;
+
+    text-align: center !important;
+    margin: 0 !important;
+}
+.menu-item-name.long-name {
+    font-size: 12px !important;
+    line-height: 1.15 !important;
+}
+.menu-item-price {
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    color: #a96f16 !important;
+    line-height: 1.2 !important;
+    margin-top: 2px !important;
+}
+
+/* =====================================================
+   ITEM MODAL
+===================================================== */
+
+.item-modal {
+
+    display: none !important;
+
+    position: fixed !important;
+
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    background: rgba(0,0,0,0.75) !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    z-index: 99999 !important;
+
+    padding: 15px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+.item-modal.active {
+
+    display: flex !important;
+
+}
+
+
+.item-modal-box {
+
+    position: relative !important;
+
+    width: 100% !important;
+
+    max-width: 360px !important;
+
+    max-height: 90vh !important;
+
+    overflow-y: auto !important;
+
+    background: #f4e5ca !important;
+
+    border-radius: 20px !important;
+
+    overflow: hidden !important;
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,0.6) !important;
+
+    text-align: center !important;
+
+}
+
+
+.item-modal-box > img {
+
+    width: 100% !important;
+
+    height: 220px !important;
+
+    object-fit: cover !important;
+
+    display: block !important;
+
+}
+
+
+.item-modal-close {
+
+    position: absolute !important;
+
+    top: 10px !important;
+
+    right: 10px !important;
+
+    width: 36px !important;
+
+    height: 36px !important;
+
+    border: none !important;
+
+    border-radius: 50% !important;
+
+    background: #160b05 !important;
+
+    color: white !important;
+
+    font-size: 24px !important;
+
+    z-index: 10 !important;
+
+    cursor: pointer !important;
+
+}
+
+.modal-item-name {
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    color: #160b05 !important;
+    margin-top: 12px !important;
+}
+
+.modal-item-price {
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #a96f16 !important;
+    margin-top: 3px !important;
+}
+
+.modal-item-description {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #4a3729 !important;
+    line-height: 1.6 !important;
+    padding: 8px 20px !important;
+}
+
+.modal-quantity-title {
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #160b05 !important;
+}
+
+
+#modalQuantity {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+}
+.modal-quantity {
+
+    display: flex !important;
+
+    justify-content: center !important;
+
+    align-items: center !important;
+
+    gap: 20px !important;
+
+    margin: 8px 0 15px !important;
+
+}
+
+
+.modal-quantity button {
+
+    width: 35px !important;
+
+    height: 35px !important;
+
+    border-radius: 50% !important;
+
+    border: 1px solid #d6a046 !important;
+
+    background: #160b05 !important;
+
+    color: #d6a046 !important;
+
+    font-size: 22px !important;
+
+}
+
+
+#modalQuantity {
+
+    font-size: 20px !important;
+
+    font-weight: bold !important;
+
+}
+
+
+.modal-add-cart-button {
+
+    width: calc(100% - 30px) !important;
+
+    margin: 0 15px 18px !important;
+
+    height: 45px !important;
+
+    border: none !important;
+
+    border-radius: 12px !important;
+
+    background: #160b05 !important;
+
+    color: #d6a046 !important;
+
+    font-size: 16px !important;
+
+    font-weight: bold !important;
+
+}
+
+
+.item-modal.active {
+
+    display: flex;
+}
+
+
+/* =====================================================
+   MODAL BOX
+===================================================== */
+
+.item-modal-box {
+
+    position: relative;
+
+    width: 360px;
+    max-width: calc(100vw - 24px);
+
+    max-height: 90vh;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(214,160,70,0.75);
+
+    background: #f4e5ca;
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,0.65);
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   MODAL IMAGE
+===================================================== */
+
+#modalItemImage {
+
+    width: 100%;
+
+    height: 230px;
+
+    display: block;
+
+    object-fit: cover;
+
+    background: #ead9bd;
+}
+
+
+/* =====================================================
+   MODAL CLOSE
+===================================================== */
+
+.item-modal-close {
+
+    position: absolute;
+
+    top: 9px;
+    right: 9px;
+
+    width: 37px;
+    height: 37px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(214,160,70,0.7);
+
+    background: rgba(20,8,3,0.9);
+
+    color: #fff;
+
+    font-size: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    z-index: 20;
+}
+
+
+.modal-item-name {
+
+    padding: 13px 15px 2px;
+
+    color: #3a1d0c;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    line-height: 29px;
+}
+
+
+.modal-item-price {
+
+    color: #a66d20;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    margin-top: 3px;
+}
+
+
+.modal-item-description {
+
+    padding: 9px 18px 18px;
+
+    color: #5a3b26;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 16px;
+
+    line-height: 21px;
+}
+/* =====================================================
+   SEARCH SCREEN
+===================================================== */
+
+.search-screen {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: #160b05;
+
+    z-index: 99990;
+
+    box-sizing: border-box;
+}
+
+
+/* SEARCH BOX */
+
+.search-box {
+    width: 100%;
+    max-width: 390px;
+    height: 100%;
+
+    margin: 0 auto;
+
+    background: #160b05;
+
+    overflow-y: auto;
+
+    box-sizing: border-box;
+
+    padding-bottom: 90px;
+}
+
+
+/* HEADER */
+
+.search-header {
+    position: sticky;
+    top: 0;
+
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+
+    background: #160b05;
+
+    border-bottom: 1px solid rgba(214,160,70,0.5);
+
+    z-index: 10;
+}
+
+
+/* CLOSE BUTTON */
+.search-close-button {
+    width: 42px !important;
+    height: 42px !important;
+
+    margin-left: 12px !important;
+
+    border-radius: 50% !important;
+
+    border: 1px solid #d6a046 !important;
+
+    background: transparent !important;
+
+    color: #d6a046 !important;
+
+    font-size: 25px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    cursor: pointer !important;
+}
+
+/* TITLE */
+
+.search-title {
+    flex: 1;
+
+    text-align: center;
+
+    margin-right: 54px;
+
+    color: #d6a046;
+
+    font-family: Georgia, serif;
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+/* INPUT */
+
+.search-input-wrapper {
+    position: relative;
+
+    margin: 15px;
+
+    height: 48px;
+}
+
+
+.search-input-icon {
+    position: absolute;
+
+    left: 14px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #d6a046;
+
+    font-size: 22px;
+
+    pointer-events: none;
+}
+
+
+.menu-search-input {
+    width: 100%;
+    height: 48px;
+
+    padding: 0 15px 0 45px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d6a046;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    background: #f4e5ca;
+
+    color: #160b05;
+
+    font-size: 16px;
+
+    font-family: Arial, sans-serif;
+}
+
+
+.menu-search-input::placeholder {
+    color: #8a7765;
+}
+
+
+/* RESULTS */
+
+.search-results {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+
+    padding: 0 10px 20px;
+
+    box-sizing: border-box;
+}
+
+
+/* SEARCH RESULT CARD */
+
+.search-results .menu-item-card {
+    width: 100% !important;
+  
+}
+
+
+/* EMPTY MESSAGE */
+
+.search-empty {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    color: #d6a046;
+
+    font-family: Georgia, serif;
+
+    font-size: 16px;
+
+    padding: 40px 20px;
+}
+
+
+/* NO RESULTS */
+
+.search-no-results {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    color: #d6a046;
+
+    font-family: Georgia, serif;
+
+    font-size: 16px;
+
+    padding: 40px 20px;
+}
+/* =====================================================
+   CART SCREEN
+===================================================== */
+
+.cart-screen {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: #160b05;
+
+    z-index: 99995;
+
+    box-sizing: border-box;
+}
+
+
+/* CONTAINER */
+
+.cart-container {
+    width: 100%;
+    max-width: 390px;
+
+    height: 100%;
+
+    margin: 0 auto;
+
+    background: #160b05;
+
+    overflow-y: auto;
+
+    box-sizing: border-box;
+
+    padding-bottom: 20px;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.cart-header {
+    position: sticky;
+
+    top: 0;
+
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    background: #160b05;
+
+    border-bottom: 1px solid rgba(214,160,70,0.55);
+
+    z-index: 20;
+}
+
+
+/* BACK */
+
+.cart-back-button {
+    width: 42px;
+    height: 42px;
+
+    margin-left: 12px;
+
+    border-radius: 50%;
+
+    border: 1px solid #d6a046;
+
+    background: transparent;
+
+    color: #d6a046;
+
+    font-size: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+
+/* TITLE */
+
+.cart-title {
+    flex: 1;
+
+    margin-right: 54px;
+
+    text-align: center;
+
+    color: #d6a046;
+
+    font-family: Georgia, serif;
+
+    font-size: 23px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   CART ITEMS
+===================================================== */
+
+.cart-items-list {
+    padding: 12px;
+
+    box-sizing: border-box;
+}
+
+
+/* ITEM */
+
+.cart-product {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+
+    min-height: 105px;
+
+    margin-bottom: 10px;
+
+    padding: 8px;
+
+    box-sizing: border-box;
+
+    background: #f4e5ca;
+
+    border: 1px solid rgba(214,160,70,0.7);
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+
+
+/* IMAGE */
+
+.cart-product-image {
+    width: 82px;
+    height: 82px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    border-radius: 11px;
+
+    background: #ead9bd;
+}
+
+
+.cart-product-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* INFO */
+
+.cart-product-info {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 0 8px;
+}
+
+
+.cart-product-name {
+    color: #160b05;
+
+    font-family: Georgia, serif;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    line-height: 1.2;
+
+    margin-bottom: 4px;
+}
+
+
+.cart-product-price {
+    color: #a96f16;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+
+/* QUANTITY */
+
+.cart-product-controls {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+
+.cart-qty-button {
+    width: 28px;
+    height: 28px;
+
+    border-radius: 50%;
+
+    border: 1px solid #d6a046;
+
+    background: #160b05;
+
+    color: #d6a046;
+
+    font-size: 18px;
+
+    line-height: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0;
+
+    cursor: pointer;
+}
+
+
+.cart-product-quantity {
+    min-width: 20px;
+
+    text-align: center;
+
+    color: #160b05;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+
+/* REMOVE */
+
+.cart-remove-button {
+    position: absolute;
+
+    top: 7px;
+    right: 7px;
+
+    width: 27px;
+    height: 27px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #160b05;
+
+    color: #d6a046;
+
+    font-size: 19px;
+
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.cart-empty {
+    display: none;
+
+    text-align: center;
+
+    padding: 90px 20px 40px;
+
+    color: #d6a046;
+}
+
+
+.cart-empty-icon {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+
+.cart-empty-title {
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+.cart-empty-text {
+    color: #b99b78;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.cart-footer {
+    display: none;
+
+    margin: 5px 12px 25px;
+
+    padding: 15px;
+
+    box-sizing: border-box;
+
+    background: #f4e5ca;
+
+    border: 1px solid rgba(214,160,70,0.7);
+
+    border-radius: 16px;
+}
+
+
+/* SUMMARY */
+
+.cart-summary-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    color: #6d5542;
+
+    font-size: 14px;
+
+    margin-bottom: 9px;
+}
+
+
+.cart-summary-row strong {
+    color: #160b05;
+
+    font-size: 15px;
+}
+
+
+/* TOTAL */
+
+.cart-total-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-top: 10px;
+
+    margin-top: 5px;
+
+    border-top: 1px solid rgba(22,11,5,0.2);
+
+    color: #160b05;
+
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+.cart-total-row strong {
+    color: #a96f16;
+
+    font-size: 19px;
+}
+
+
+/* CLEAR */
+
+.cart-clear-button {
+    width: 100%;
+
+    height: 42px;
+
+    margin-top: 15px;
+
+    border: 1px solid #160b05;
+
+    border-radius: 10px;
+
+    background: transparent;
+
+    color: #160b05;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* ORDER */
+
+.cart-order-button {
+    width: 100%;
+
+    height: 46px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    background: #160b05;
+
+    color: #d6a046;
+
+    font-family: Georgia, serif;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.cart-order-button:active,
+.cart-clear-button:active,
+.cart-qty-button:active,
+.cart-remove-button:active {
+    transform: scale(0.96);
+}
+
+/* =====================================================
+   LOCATION MODALS
+===================================================== */
+
+.location-modal,
+.location-success-modal {
+
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.78);
+
+    z-index: 100000;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px;
+
+    box-sizing: border-box;
+}
+
+
+/* MODAL BOX */
+
+.location-modal-box {
+
+    width: 100%;
+
+    max-width: 340px;
+
+    background: #f4e5ca;
+
+    border-radius: 20px;
+
+    padding: 25px 20px 20px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    border: 1px solid #d6a046;
+
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+
+
+/* ICON */
+
+.location-icon,
+.location-success-icon {
+
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    background: #160b05;
+
+    color: #d6a046;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 32px;
+}
+
+
+.location-success-icon {
+    font-size: 30px;
+}
+
+
+/* TITLE */
+
+.location-modal-title {
+
+    color: #160b05;
+
+    font-family: Georgia, serif;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+/* TEXT */
+
+.location-modal-text {
+
+    color: #7b6652;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+
+/* ALLOW */
+
+.location-allow-button,
+.location-continue-button {
+
+    width: 100%;
+
+    height: 46px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    background: #160b05;
+
+    color: #d6a046;
+
+    font-family: Georgia, serif;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* CANCEL */
+
+.location-cancel-button {
+
+    width: 100%;
+
+    height: 42px;
+
+    margin-top: 9px;
+
+    border: 1px solid #160b05;
+
+    border-radius: 11px;
+
+    background: transparent;
+
+    color: #160b05;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+.location-allow-button:active,
+.location-continue-button:active,
+.location-cancel-button:active {
+
+    transform: scale(0.97);
+
+}
+/* ========================================================================================================
+   SMALL MOBILE
+   مثل 360px - 375px
+======================================================================================================= */
+
+@media (min-width: 601px) {
+
+    .items-screen {
+
+        width: 390px !important;
+
+        max-width: 390px !important;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+}
+@media (max-width: 380px) {
+
+    .home-content {
+
+        padding-top: 32px;
+
+    }
+
+
+    .home-logo {
+
+        width: 140px;
+
+        margin-bottom: 11px;
+
+    }
+
+
+    .home-title {
+
+        font-size: 35px;
+
+    }
+
+
+    .home-title-big {
+
+        font-size: 43px;
+
+        line-height: 0.82;
+
+    }
+
+
+    .home-subtitle {
+
+        font-size: 12.5px;
+
+        letter-spacing: 2.7px;
+
+        margin-top: 24px;
+
+    }
+
+
+    .explore-button {
+
+        width: 285px;
+
+        height: 61px;
+
+        bottom: 55px;
+
+        font-size: 16px;
+
+    }
+
+
+    .home-decoration {
+
+        bottom: 21px;
+
+    }
+
+}
+
+/* =====================================================
+   على الهاتف الحقيقي
+   نستخدم عرض الهاتف الحقيقي
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .bottom-nav {
+        width: 100vw;
+        max-width: none;
+
+        height: 58px;
+
+        padding-bottom:
+            env(safe-area-inset-bottom);
+    }
+
+    body {
+
+        width: 100%;
+
+        min-height: 100dvh;
+
+        display: block;
+
+        background: #000;
+
+    }
+
+
+/* الوضع الطبيعي */
+    .mobile-menu {
+        width: 100vw;
+        max-width: none;
+        min-height: 100dvh;
+        margin: 0;
+    }
+
+    .splash-screen {
+        width: 100%;
+        height: 100dvh;
+
+        overflow: hidden;
+    }
+
+/* عندما تكون شاشة المنيو مفتوحة */
+body.menu-active {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+/* شاشة المنيو */
+body.menu-active .mobile-menu {
+    height: auto;
+    min-height: 100dvh;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+
+    .home-title-big {
+
+        font-size: 49px;
+
+    }
+
+
+    .home-subtitle {
+
+        font-size: 15px;
+
+        letter-spacing: 3.5px;
+
+    }
+
+    .home-content {
+
+        padding-top: 38px;
+
+        padding-left: 10px;
+
+        padding-right: 10px;
+
+    }
+
+
+    .home-logo {
+
+        width: 150px;
+
+        max-width: 44vw;
+
+        margin-bottom: 13px;
+
+    }
+
+
+    .home-title {
+
+        font-size: 38px;
+
+        line-height: 0.88;
+
+    }
+
+
+    .home-title-big {
+
+        font-size: 46px;
+
+        line-height: 0.82;
+
+        letter-spacing: -1px;
+
+    }
+
+
+    .home-subtitle {
+
+        font-size: 14px;
+
+        letter-spacing: 3.2px;
+
+        margin-top: 26px;
+
+    }
+
+
+    .explore-button {
+
+        width: 290px;
+
+        height: 63px;
+
+        bottom: 58px;
+
+        font-size: 17px;
+
+    }
+
+        .items-screen {
+
+        width: 100vw !important;
+
+        max-width: 390px !important;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+      .cart-back-button {
+        width: 48px !important;
+        height: 48px !important;
+
+        border: 1px solid #d6a046 !important;
+        border-radius: 50% !important;
+
+        background: transparent !important;
+        color: #d6a046 !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        font-size: 25px !important;
+        font-weight: 400 !important;
+
+        padding: 0 !important;
+        margin: 0 !important;
+
+        line-height: 1 !important;
+    }
+
+    .home-screen {
+        width: 100% !important;
+        height: 100dvh !important;
+        min-height: 0 !important;
+        max-height: 100dvh !important;
+        overflow: hidden !important;
+        position: relative !important;
+    }
+
+    .home-background {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center center !important;
+    }
+
+    .home-content {
+        width: 100% !important;
+        height: 100% !important;
+        padding: 25px 14px 18px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* الشعار */
+    .home-logo {
+        width: 125px !important;
+        max-width: 35vw !important;
+        margin-top: 0 !important;
+        margin-bottom: 12px !important;
+    }
+
+    /* Start With */
+    .home-title {
+        font-size: 32px !important;
+        line-height: 0.95 !important;
+    }
+
+    /* Something Delicious */
+    .home-title-big {
+        font-size: 39px !important;
+        line-height: 0.88 !important;
+    }
+
+    /* Coffee • Snacks • Desserts */
+    .home-subtitle {
+        font-size: 10px !important;
+        letter-spacing: 3px !important;
+        margin-top: 18px !important;
+    }
+
+    /* زر Explore */
+    .explore-button {
+        width: 82% !important;
+        max-width: 320px !important;
+        height: 58px !important;
+        min-height: 58px !important;
+        font-size: 16px !important;
+        margin-top: auto !important;
+        margin-bottom: 12px !important;
+    }
+
+    .home-decoration {
+        font-size: 18px !important;
+        margin-bottom: 0 !important;
+    }
+
+    .category-arrow {
+        width: 40px !important;
+        height: 40px !important;
+
+        left: 12px !important;
+        bottom: 12px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        font-size: 20px !important;
+        font-weight: 500 !important;
+        line-height: 1 !important;
+
+        border-radius: 50% !important;
+        z-index: 20 !important;
+    }
+
+}
+
+
+/* HOME ACTIVE */
+body.home-active .splash-screen {
+    display: none !important;
+}
+
+body.home-active .home-screen {
+    display: flex !important;
+}
+
+body.home-active .menu-screen {
+    display: none !important;
+}
+
+
+/* MENU ACTIVE */
+body.menu-active .splash-screen {
+    display: none !important;
+}
+
+body.menu-active .home-screen {
+    display: none !important;
+}
+
+/* =====================================================
+   MOBILE RESPONSIVE FIX
+===================================================== */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+}
+
+.mobile-menu {
+    width: 100% !important;
+    max-width: 390px !important;
+    margin: 0 auto !important;
+    overflow-x: hidden !important;
+}
+
+/* Splash */
+.splash-screen {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* Home */
+.home-screen {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* Home background */
+.home-background {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+/* Home content */
+.home-content {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+/* =====================================================
+   CATEGORY ARROW - MOBILE
+===================================================== */
+
+.category-arrow {
+    width: 32px !important;
+    height: 32px !important;
+
+    left: 9px !important;
+    bottom: 9px !important;
+
+    font-size: 17px !important;
+    font-weight: 700 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    border-radius: 50% !important;
+
+    z-index: 20 !important;
+}
