@@ -3,50 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <!-- إعدادات الهاتف -->
-    <meta name="viewport"
-          content="width=device-width,
-                   initial-scale=1.0,
-                   maximum-scale=1.0,
-                   user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,   maximum-scale=1.0,  user-scalable=no">
     <title>GM Coffee - QR Menu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-
-    <!--  الحاوية الرئيسية للمنيو  كل التصميم مخصص للموبايل -->
     <main class="mobile-menu">
-
         <!--  شاشة البداية-->
         <section
-            class="splash-screen"
-            id="splashScreen">
-  <img
-                src="images/background.jpeg"
-                alt="Coffee Shop Background"
-                class="background-image">
+            class="splash-screen" id="splashScreen">
+  <img  src="images/background_6_11zon.webp"   alt="Coffee Shop Background"  class="background-image">
             <div class="background-overlay"></div>
-
             <div class="splash-content">
                 <div class="logo-area">
-                    <img
-                        src="images/logo.png"
-                        alt="GM Coffee Logo"
-                        class="main-logo">
+                    <img   src="images/logo.png"   alt="GM Coffee Logo"    class="main-logo">
                 </div>
-                <div class="shop-description">
-                    SNACK + BARISTA + COFFEE SHOP
-                </div>
-
+                <div class="shop-description">  SNACK + BARISTA + COFFEE SHOP  </div>
                 <!--   الخط الفاصل-->
                 <div class="separator">
                     <span></span>
-                    <div class="separator-icon">
-                        GM
-                    </div>
+                    <div class="separator-icon">     GM  </div>
                     <span></span>
                 </div>
-
 
               <!--   COFFEE LOADER -->
 <div class="coffee-loader">
@@ -57,125 +35,50 @@
 
     <!-- الفنجان ثابت -->
     <div class="coffee-loader-center">
-        <img
-            src="images/coffee-icon.png"
-            alt="Coffee"
-            class="coffee-loader-icon">
+        <img src="images/coffee-icon.png" alt="Coffee" class="coffee-loader-icon">
     </div>
 </div>
-
-                <div class="loading-text">
-                    LOADING YOUR MENU...
-                </div>
-                <div
-                    class="loading-percent"
-                    id="loadingPercent">
-                    0%
-                </div>
+                <div class="loading-text">   LOADING YOUR MENU... </div>
+                <div  class="loading-percent"   id="loadingPercent">   0% </div>
             </div>
         </section>
 
-
-        <!-- ==========================================================================================
-             الصفحة الرئيسية
-        =========================================================================================== -->
+        <!--  الصفحة الرئيسية -->
 <section class="home-screen" id="homeScreen">
-
-    <!-- صورة الخلفية -->
-    <img
-        src="images/home-background.jpeg"
-        alt="GM Coffee"
-        class="home-background"
-    >
-
-    <!-- طبقة خفيفة فوق الصورة -->
+    <img src="images/home-background_14_11zon.webp" alt="GM Coffee" class="home-background" >
     <div class="home-overlay"></div>
-
-    <!-- محتوى الشاشة -->
     <div class="home-content">
-
-        <!-- Logo -->
-        <img
-            src="images/logo.png"
-            alt="GM Coffee"
-            class="home-logo"
-        >
-
-        <!-- العنوان -->
+        <img src="images/logo.png"  alt="GM Coffee" class="home-logo" >
 <div class="home-text-panel">
-
-    <div class="home-title">
-        Start With
-    </div>
-
-    <div class="home-title-big">
-        Something<br>
-        Delicious
-    </div>
-
+    <div class="home-title">   Start With </div>
+    <div class="home-title-big">  Something<br> Delicious </div>
     <div class="home-subtitle">
         COFFEE&nbsp;&nbsp;•&nbsp;&nbsp;SNACKS&nbsp;&nbsp;•&nbsp;&nbsp;DESSERTS
     </div>
-
 </div>
-
-        <!-- زر الدخول -->
-        <button
-            class="explore-button"
-            onclick="openMenu()"
-        >
-            EXPLORE OUR MENU
-            <span>→</span>
-        </button>
-
-        <!-- الزخرفة السفلية -->
-        <div class="home-decoration">
-            ◇ ◇
-        </div>
-
+        <button  class="explore-button" onclick="openMenu()" > EXPLORE OUR MENU <span>→</span> </button>
+        <div class="home-decoration">  ◇ ◇ </div>
     </div>
-
 </section>
 
-
-    <!-- ==========================================================================================
-      شاشة الاقسام 
-      ==========================================================================================-->
+    <!--  شاشة الاقسام -->
 <section class="menu-screen" id="menuScreen">
-
-    <!-- ================= HEADER ================= -->
     <div class="categories-header">
-
-        <img
-            src="images/menu-header.png"
-            alt="GM Coffee"
-            class="categories-header-bg">
-<button class="back-button" onclick="goHome()">
-    ←
-</button>
+        <img src="images/menu-header_12_11zon.webp" alt="GM Coffee"class="categories-header-bg">
+<button class="back-button" onclick="goHome()"> ←</button>
     </div>
-
     <!-- ================= CATEGORIES ================= -->
     <div class="categories-grid">
 
         <!-- HOT DRINKS -->
-      <div class="category-card"
-     onclick="openItems('hotDrinksItems')">
+      <div class="category-card" onclick="openItems('hotDrinksItems')">
             <div class="category-info">
-                <div class="category-name">
-                  Hot Drinks
-                </div>
-                <div class="category-arabic">
-                    مشروبات ساخنة
-                </div>
-                <div class="category-arrow">
-                    →
-                </div>
+                <div class="category-name">  Hot Drinks  </div>
+                <div class="category-arabic">    مشروبات ساخنة </div>
+                <div class="category-arrow">   → </div>
             </div>
             <div class="category-image">
-                <img
-                    src="images/hot-drinks.jpeg"
-                    alt="Hot Drinks">
+                <img   src="images/hot-drinks_17_11zon.webp"  alt="Hot Drinks">
             </div>
         </div>
 
@@ -183,85 +86,49 @@
   <div class="category-card"
      onclick="openItems('softDrinkItems')">
     <div class="category-info">
-        <div class="category-name">
-           Soft drink
-        </div>
-        <div class="category-arabic">
-            مشروب غازي
-        </div>
-        <div class="category-arrow">
-            →
-        </div>
+        <div class="category-name"> Soft drink </div>
+        <div class="category-arabic">  مشروب غازي </div>
+        <div class="category-arrow">   →   </div>
     </div>
     <div class="category-image">
-        <img
-            src="images/Soft Drink.jpeg"
-            alt="Soft Drink">
+        <img   src="images/Soft Drink_46_11zon.webp"   alt="Soft Drink">
     </div>
 </div>
-
         <!-- Cold Coffee -->
      <div class="category-card"
      onclick="openItems('coldCoffeeItems')">
             <div class="category-info"> 
-                <div class="category-name">
-                    Cold Coffee
-                </div>
-                <div class="category-arabic">
-                  قهوة باردة
-                </div>
-                <div class="category-arrow">
-                    →
-                </div>
+                <div class="category-name">   Cold Coffee  </div>
+                <div class="category-arabic">   قهوة باردة </div>
+                <div class="category-arrow">      →   </div>
             </div>
             <div class="category-image">
-                <img
-                    src="images/Cold Coffee1.jpeg"
-                    alt="Cold Coffee">
+                <img    src="images/Cold Coffee1_22_11zon.webp"     alt="Cold Coffee">
             </div>
-
         </div>
-
 
         <!-- Mix Drink -->
            <div class="category-card"
      onclick="openItems('mixDrinkItems')">
             <div class="category-info">
-                <div class="category-name">
-                    Mix Drink
-                </div>
-                <div class="category-arabic">
-                    مشروب ميكس
-                </div>
-                <div class="category-arrow">
-                    →
-                </div>
+                <div class="category-name">  Mix Drink </div>
+                <div class="category-arabic">   مشروب ميكس </div>
+                <div class="category-arrow">    →  </div>
             </div>
             <div class="category-image">
-                <img
-                    src="images/Mix Drink.jpeg"
-                    alt="  Mix Drink">
+                <img   src="images/Mix Drink_17_11zon.webp"  alt="  Mix Drink">
             </div>
         </div>
-
  <!-- Milkshakes -->
       <div class="category-card"
      onclick="openItems('milkshakesItems')">
             <div class="category-info">
-                <div class="category-name">
-                    Milkshakes
-                </div>
-                <div class="category-arabic">
-                    ميلك شيك
-                </div>
-                <div class="category-arrow">
-                    →
-                </div>
+                <div class="category-name">     Milkshakes  </div>
+                <div class="category-arabic"> ميلك شيك  </div>
+                <div class="category-arrow">  →  </div>
             </div>
             <div class="category-image">
-                <img
-                      src="images/Milkshakes.jpeg"
-                    alt="Milkshakes">
+   <img src="images/Milkshakes_15_11zon.webp"  alt="Milkshakes">
             </div>
         </div>
 
@@ -272,17 +139,11 @@
                 <div class="category-name">
                     Smoothies
                 </div>
-                <div class="category-arabic">
-                    سموزي
-                </div>
-                <div class="category-arrow">
-                    →
-                </div>
+                <div class="category-arabic">   سموزي </div>
+                <div class="category-arrow">   →   </div>
             </div>
             <div class="category-image">
-                <img
-                      src="images/Smoothies.jpeg"
-                    alt="Smoothies">
+                <img   src="images/Smoothies_44_11zon.webp"   alt="Smoothies">
             </div>
         </div>
 
@@ -290,20 +151,12 @@
                <div class="category-card"
      onclick="openItems('pastaItems')">
             <div class="category-info">
-                <div class="category-name">
-                    Pasta
-                </div>
-                <div class="category-arabic">
-                    معكرونة
-                </div>
-                <div class="category-arrow">
-                    →
-                </div>
+                <div class="category-name"> Pasta</div>
+                <div class="category-arabic">  معكرونة    </div>
+                <div class="category-arrow">    → </div>
             </div>
             <div class="category-image">
-                <img
-                    src="images/PASTA.jpeg"
-                    alt="Pasta">
+                <img  src="images/PASTA_33_11zon.webp"  alt="Pasta">
             </div>
         </div>
 
@@ -311,20 +164,12 @@
                <div class="category-card"
      onclick="openItems('crepeItems')">
             <div class="category-info">
-                <div class="category-name">
-                    Crepe
-                </div>
-                <div class="category-arabic">
-                    كريب
-                </div>
-                <div class="category-arrow">
-                    →
-                </div>
+                <div class="category-name"> Crepe  </div>
+                <div class="category-arabic">  كريب  </div>
+                <div class="category-arrow">   →  </div>
             </div>
             <div class="category-image">
-                <img
-                      src="images/Crepe.jpeg"
-                    alt="Crepe">
+                <img     src="images/Crepe_1_11zon.webp"    alt="Crepe">
             </div>
         </div>
 
@@ -332,80 +177,48 @@
                <div class="category-card"
      onclick="openItems('breakfastItems')">
             <div class="category-info">
-                <div class="category-name">
-                    Breakfast
-                </div>
-                <div class="category-arabic">
-                    فطور
-                </div>
-                <div class="category-arrow">
-                    →
-                </div>
+                <div class="category-name">   Breakfast </div>
+                <div class="category-arabic">    فطور  </div>
+                <div class="category-arrow">   →  </div>
             </div>
             <div class="category-image">
-                <img
-                    src="images/Breakfast.jpeg"
-                    alt="Breakfast">
+                <img   src="images/Breakfast_7_11zon.webp"   alt="Breakfast">
             </div>
         </div>
 
        <!-- Snack -->
         <div class="category-card" onclick="openItems('snackItems')">
             <div class="category-info">
-                <div class="category-name">
-                    Snack
-                </div>
-                <div class="category-arabic">
-                    سناك
-                </div>
-                <div class="category-arrow">
-                    →
-                </div>
+                <div class="category-name">   Snack </div>
+                <div class="category-arabic">  سناك </div>
+                <div class="category-arrow">    → </div>
             </div>
             <div class="category-image">
-                <img
-                    src="images/Snack.jpeg"
-                    alt="Snack">
+                <img    src="images/Snack_45_11zon.webp"   alt="Snack">
             </div>
         </div>
 
             <!-- Meal -->
         <div class="category-card" onclick="openItems('MealItems')">
             <div class="category-info">
-                <div class="category-name">
-                    Meal
-                </div>
-                <div class="category-arabic">
-                    وجبات
-                </div>
-                <div class="category-arrow">
-                    →
-                </div>
+                <div class="category-name">    Meal  </div>
+                <div class="category-arabic">     وجبات </div>
+                <div class="category-arrow">     →  </div>
             </div>
             <div class="category-image">
-                <img
-                    src="images/Meal.png"
-                    alt="Meal">
+                <img src="images/Meal_11_11zon.webp"   alt="Meal">
             </div>
         </div>
 
           <!-- Appetizers -->
         <div class="category-card" onclick="openItems('AppetizersItems')">
             <div class="category-info">
-                <div class="category-name">
-                    Appetizers
-                </div>
-                <div class="category-arabic">
-                    مقبلات
-                </div>
-                <div class="category-arrow">
-                    →
-                </div>
+                <div class="category-name">  Appetizers  </div>
+                <div class="category-arabic">   مقبلات  </div>
+                <div class="category-arrow">   →  </div>
             </div>
             <div class="category-image">
-                <img
-                    src="images/Appetizers.png"
-                    alt="Appetizers">
+                <img  src="images/Appetizers_4_11zon.webp"   alt="Appetizers">
             </div>
         </div>
 
@@ -437,7 +250,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Espresso.png"
+                    src="images/Espresso_11_11zon.webp"
                     alt="Espresso">
             </div>
             <div class="menu-item-info">
@@ -453,7 +266,7 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
     'Espresso',
-    'images/Espresso.png',
+    'images/Espresso_11_11zon.webp',
     1.00,
     'Freshly prepared espresso coffee.'
 )">
@@ -465,7 +278,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Cappuccino.png"
+                    src="images/Cappuccino_10_11zon.webp"
                     alt="Cappuccino">
             </div>
             <div class="menu-item-info">
@@ -481,7 +294,7 @@
                 class="add-to-cart-button"
                               onclick="openItemModal(
     'Cappuccino',
-    'images/Cappuccino.png',
+    'images/Cappuccino_10_11zon.webp',
     3.00,
     'Freshly prepared creamy cappuccino.'
 )">
@@ -493,7 +306,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Hot Chocolate.png"
+                    src="images/Hot Chocolate_15_11zon.webp"
                     alt="Hot Chocolate">
             </div>
             <div class="menu-item-info">
@@ -509,7 +322,7 @@
                 class="add-to-cart-button"
                                onclick="openItemModal(
     'Hot Chocolate',
-    'images/Hot Chocolate.png',
+    'images/Hot Chocolate_15_11zon.webp',
     3.50,
     'Rich and creamy hot chocolate, freshly prepared.'
 )">
@@ -521,7 +334,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Coffee Latte.png"
+                    src="images/Coffee Latte_20_11zon.webp"
                     alt="Coffee Latte">
             </div>
             <div class="menu-item-info">
@@ -537,7 +350,7 @@
                 class="add-to-cart-button"
                               onclick="openItemModal(
     'Coffee Latte',
-    'images/Coffee Latte.png',
+    'images/Coffee Latte_20_11zon.webp',
     3.00,
     'Smooth and creamy latte, freshly prepared with rich espresso.'
 )">
@@ -549,7 +362,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Nescafe Coffee Mate.png"
+                    src="images/Nescafe Coffee Mate_23_11zon.webp"
                     alt="Nescafe Mate">
             </div>
             <div class="menu-item-info">
@@ -565,7 +378,7 @@
                 class="add-to-cart-button"
                                onclick="openItemModal(
                     'Nescafe Mate',
-                     'images/Nescafe Coffee Mate.png',
+                     'images/Nescafe Coffee Mate_23_11zon.webp',
                         2.50,
                        'Smooth and creamy Nescafe coffee with a rich, milky finish.'
                           )">
@@ -577,7 +390,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Nescafe Milk.png"
+                    src="images/Nescafe Milk_25_11zon.webp"
                     alt="Nescafe Milk">
             </div>
             <div class="menu-item-info">
@@ -593,7 +406,7 @@
                 class="add-to-cart-button"
                                onclick="openItemModal(
                     'Nescafe Milk',
-                     'images/Nescafe Milk.png',
+                     'images/Nescafe Milk_25_11zon.webp',
                         3.00,
                        'Smooth and creamy Nescafe coffee with a rich milk blend.'
                           )">
@@ -605,7 +418,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Turkish Coffee.png"
+                    src="images/Turkish Coffee_7_11zon.webp"
                     alt="Turkish Coffee">
             </div>
             <div class="menu-item-info">
@@ -621,7 +434,7 @@
                 class="add-to-cart-button"
                                onclick="openItemModal(
                     'Turkish Coffee',
-                     'images/Turkish Coffee.png',
+                     'images/Turkish Coffee_7_11zon.webp',
                         2.00,
                        'Authentic Turkish coffee, rich and aromatic with a smooth finish.'
                           )">
@@ -633,7 +446,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Macchiato.png"
+                    src="images/Macchiato_7_11zon.webp"
                     alt="Macchiato">
             </div>
             <div class="menu-item-info">
@@ -649,7 +462,7 @@
                 class="add-to-cart-button"
                                onclick="openItemModal(
                     'Macchiato',
-                     'images/Macchiato.png',
+                     'images/Macchiato_7_11zon.webp',
                         1.50,
                        'Rich espresso topped with a touch of creamy milk foam.'
                           )">
@@ -661,7 +474,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Mocha Latte.png"
+                    src="images/Mocha Latte_19_11zon.webp"
                     alt="Mocha Latte">
             </div>
             <div class="menu-item-info">
@@ -677,7 +490,7 @@
                 class="add-to-cart-button"
                                onclick="openItemModal(
                     'Mocha Latte',
-                     'images/Mocha Latte.png',
+                     'images/Mocha Latte_19_11zon.webp',
                         3.00,
                        'Smooth espresso blended with rich chocolate and creamy milk.'
                           )">
@@ -689,7 +502,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Hot Lotus.png"
+                    src="images/Hot Lotus_16_11zon.webp"
                     alt="Hot Lotus">
             </div>
             <div class="menu-item-info">
@@ -705,7 +518,7 @@
                 class="add-to-cart-button"
                                onclick="openItemModal(
                     'Hot Lotus',
-                     'images/Hot Lotus.png',
+                     'images/Hot Lotus_16_11zon.webp',
                         5.00,
                        'Warm and creamy Lotus drink with a rich caramelized biscuit flavor.'
                           )">
@@ -717,7 +530,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Tea.png"
+                    src="images/Tea_4_11zon.webp"
                     alt="Tea">
             </div>
             <div class="menu-item-info">
@@ -733,7 +546,7 @@
                 class="add-to-cart-button"
                                onclick="openItemModal(
                     'Tea',
-                     'images/Tea.png',
+                     'images/Tea_4_11zon.webp',
                         0.50,
                        'Freshly brewed tea with a smooth and refreshing taste.'
                           )">
@@ -745,7 +558,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Nescafe Coffee Mate.png"
+                    src="images/Nescafe Coffee Mate_23_11zon.webp"
                     alt="3 in 1">
             </div>
             <div class="menu-item-info">
@@ -757,7 +570,7 @@
                 class="add-to-cart-button"
                                onclick="openItemModal(
                     '3 in 1',
-                     'images/Nescafe Coffee Mate.png',
+                     'images/Nescafe Coffee Mate_23_11zon.webp',
                         0.50,
                        'Smooth and creamy Nescafe coffee with a rich, milky finish.'
                           )">
@@ -769,7 +582,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Nescafe Coffee Mate.png"
+                    src="images/Nescafe Coffee Mate_23_11zon.webp"
                     alt="2 in 1">
             </div>
             <div class="menu-item-info">
@@ -781,7 +594,7 @@
                 class="add-to-cart-button"
                                onclick="openItemModal(
                     '2 in 1',
-                     'images/Nescafe Coffee Mate.png',
+                     'images/Nescafe Coffee Mate_23_11zon.webp',
                         0.50,
                        'Smooth and creamy Nescafe coffee with a rich, milky finish.'
                           )">
@@ -793,7 +606,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Caramel Latte.png"
+                    src="images/Caramel Latte_12_11zon.webp"
                     alt="Caramel Macchiato">
             </div>
             <div class="menu-item-info">
@@ -809,7 +622,7 @@
                 class="add-to-cart-button"
                               onclick="openItemModal(
     'Caramel Macchiato',
-    'images/Caramel Latte.png',
+    'images/Caramel Latte_12_11zon.webp',
     0.50,
     'Rich espresso layered with silky steamed milk and smooth caramel, topped with a delicate caramel drizzle for a sweet, creamy finish.'
 )">
@@ -821,7 +634,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Americano.png"
+                    src="images/Americano_2_11zon.webp"
                     alt="Americano">
             </div>
             <div class="menu-item-info">
@@ -837,7 +650,7 @@
                 class="add-to-cart-button"
                               onclick="openItemModal(
     'Americano',
-    'images/Americano.png',
+    'images/Americano_2_11zon.webp',
     2.00,
     'Smooth and bold Americano made with rich espresso and hot water, delivering a clean, balanced coffee flavor with a deep aroma.'
 )">
@@ -849,7 +662,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Vanilla Latte.png"
+                    src="images/Vanilla Latte_11_11zon.webp"
                     alt="White Mocha Latte">
             </div>
             <div class="menu-item-info">
@@ -865,7 +678,7 @@
                 class="add-to-cart-button"
                               onclick="openItemModal(
     'White Mocha Latte',
-    'images/Vanilla Latte.png',
+    'images/Vanilla Latte_11_11zon.webp',
     3.00,
     'Creamy white chocolate mocha blended with rich espresso and steamed milk, finished with a smooth white chocolate sweetness.'
 )">
@@ -877,7 +690,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Matcha.png"
+                    src="images/Matcha_10_11zon.webp"
                     alt="Matcha">
             </div>
             <div class="menu-item-info">
@@ -893,7 +706,7 @@
                 class="add-to-cart-button"
                               onclick="openItemModal(
     'Matcha',
-    'images/Matcha.png',
+    'images/Matcha_10_11zon.webp',
     4.00,
     ' Smooth and creamy matcha blended with milk, offering a refreshing taste with delicate earthy and sweet notes.'
 )">
@@ -905,7 +718,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Cumin and lemon.png"
+                    src="images/Cumin and lemon_4_11zon.webp"
                     alt="Cumin and lemon">
             </div>
             <div class="menu-item-info">
@@ -920,8 +733,8 @@
                 type="button"
                 class="add-to-cart-button"
                               onclick="openItemModal(
-    'Cumin and lemon.png',
-    'images/Matcha.png',
+    'Cumin and lemon',
+    'images/Cumin and lemon_4_11zon.webp',
     0.50,
     ' Smooth and creamy matcha blended with milk, offering a refreshing taste with delicate earthy and sweet notes.'
 )">
@@ -957,7 +770,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Small Water.png"
+                    src="images/Small Water_43_11zon.webp"
                     alt="Small Water">
             </div>
             <div class="menu-item-info">
@@ -973,7 +786,7 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'Small Water',
-                    'images/Small Water.png',
+                    'images/Small Water_43_11zon.webp',
                     0.50,
                     'Refreshing natural water, served chilled.'
                 )">
@@ -986,7 +799,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Pepsi.png"
+                    src="images/Pepsi_36_11zon.webp"
                     alt="Pepsi ">
             </div>
             <div class="menu-item-info">
@@ -994,7 +807,7 @@
                     Pepsi 
                 </div>
                 <div class="menu-item-price">
-                    $1.00
+                    $0.80
                 </div>
             </div>
             <button
@@ -1002,8 +815,8 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'Pepsi ',
-                    'images/Pepsi.png',
-                    1.00,
+                    'images/Pepsi_36_11zon.webp',
+                    0.80,
                     'Refreshing and ice-cold Pepsi with a crisp, sparkling taste.'
                 )">
                 +
@@ -1014,7 +827,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Miranda.png"
+                    src="images/Miranda_16_11zon.webp"
                     alt="Miranda ">
             </div>
             <div class="menu-item-info">
@@ -1022,7 +835,7 @@
                     Mirinda
                 </div>
                 <div class="menu-item-price">
-                    $1.00
+                    $0.80
                 </div>
             </div>
             <button
@@ -1030,8 +843,8 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'Mirinda',
-                    'images/Miranda.png',
-                    1.00,
+                    'images/Miranda_16_11zon.webp',
+                    0.80,
                     'Refreshing and sparkling Miranda with a delicious fruity flavor.'
                 )">
                 +
@@ -1042,7 +855,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/7UP.png"
+                    src="images/7UP_1_11zon.webp"
                     alt="7UP">
             </div>
             <div class="menu-item-info">
@@ -1050,7 +863,7 @@
                     7UP
                 </div>
                 <div class="menu-item-price">
-                   $1.00
+                   $0.80
                 </div>
             </div>
             <button
@@ -1058,8 +871,8 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     '7UP',
-                    'images/7UP.png',
-                    1.00,
+                    'images/7UP_1_11zon.webp',
+                    0.80,
                     'Refreshing and sparkling 7UP with a crisp, lemon-lime taste.'
                 )">
                 +
@@ -1070,7 +883,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Red Bull.png"
+                    src="images/Red Bull_40_11zon.webp"
                     alt="Red Bull">
             </div>
             <div class="menu-item-info">
@@ -1086,7 +899,7 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'Red Bull',
-                    'images/Red Bull.png',
+                    'images/Red Bull_40_11zon.webp',
                     2.00,
                     'Refreshing energy drink with a crisp taste and smooth finish.”'
                 )">
@@ -1098,7 +911,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Orange Fresh.png"
+                    src="images/Orange Fresh_27_11zon.webp"
                     alt="Orange Fresh">
             </div>
             <div class="menu-item-info">
@@ -1114,7 +927,7 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'Orange Fresh',
-                    'images/large water.png',
+                    'images/Orange Fresh_27_11zon.webp',
                     2.00,
                     'Freshly squeezed orange juice with a naturally sweet and refreshing taste.'
                 )">
@@ -1126,7 +939,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Pomegranate.png"
+                    src="images/Pomegranate_38_11zon.webp"
                     alt="Pomegranate">
             </div>
             <div class="menu-item-info">
@@ -1142,7 +955,7 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'Pomegranate',
-                    'images/Pomegranate.png',
+                    'images/Pomegranate_38_11zon.webp',
                     3.00,
                     'Freshly squeezed pomegranate juice with a naturally sweet and refreshing taste.'
                 )">
@@ -1154,7 +967,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Zaatar Lemonade.png"
+                    src="images/Zaatar Lemonade_16_11zon.webp"
                     alt="Zaatar Lemonade">
             </div>
             <div class="menu-item-info">
@@ -1170,7 +983,7 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'Zaatar Lemonade',
-                    'images/Zaatar Lemonade.png',
+                    'images/Zaatar Lemonade_16_11zon.webp',
                     2.50,
                     'Refreshing lemonade infused with aromatic zaatar and a unique herbal flavor.'
                 )">
@@ -1182,7 +995,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Lemon Mint.png"
+                    src="images/Lemon Mint_2_11zon.webp"
                     alt="Lemon Mint">
             </div>
             <div class="menu-item-info">
@@ -1198,7 +1011,7 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'Lemon Mint',
-                    'images/Lemon Mint.png',
+                    'images/Lemon Mint_2_11zon.webp',
                     2.50,
                     'Refreshing lemonade blended with fresh mint and a zesty citrus flavor.'
                 )">
@@ -1210,7 +1023,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Lemonade.png"
+                    src="images/Lemonade_3_11zon.webp"
                     alt="Lemonade">
             </div>
             <div class="menu-item-info">
@@ -1218,7 +1031,7 @@
                    Lemonade
                 </div>
                 <div class="menu-item-price">
-                    $0.50
+                    $2.00
                 </div>
             </div>
             <button
@@ -1226,8 +1039,8 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'Lemonade',
-                    'images/Lemonade.png',
-                    0.50,
+                    'images/Lemonade_3_11zon.webp',
+                    2.00,
                     'Freshly prepared lemonade with a refreshing and zesty citrus flavor.'
                 )">
                 +
@@ -1238,7 +1051,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Peach.png"
+                    src="images/Peach_34_11zon.webp"
                     alt="Iced Tea Peach">
             </div>
             <div class="menu-item-info">
@@ -1254,7 +1067,7 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'Iced Tea Peach',
-                    'images/Peach.png',
+                    'images/Peach_34_11zon.webp',
                     3.00,
                     'Refreshing iced tea Peach with a smooth, chilled and fruity taste.'
                 )">
@@ -1262,39 +1075,12 @@
             </button>
         </div>
 
-             <!--  Iced Tea Raspberry -->
-        <div class="menu-item-card">
-            <div class="menu-item-image">
-                <img
-                    src="images/Iced Tea Raspberry.png"
-                    alt="Peach ">
-            </div>
-            <div class="menu-item-info">
-                <div class="menu-item-name">
-                   Iced Tea Raspberry 
-                </div>
-                <div class="menu-item-price">
-                    $4.00
-                </div>
-            </div>
-            <button
-                type="button"
-                class="add-to-cart-button"
-                onclick="openItemModal(
-                    'Iced Tea Raspberry ',
-                    'images/Iced Tea Raspberry.png',
-                    4.00,
-                    'Refreshing Raspberry Iced Tea with sweet raspberries, zesty lemon, fresh mint and chilled ice.'
-                )">
-                +
-            </button>
-        </div>
-
+           
              <!-- Mojito-->
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Mojito.png"
+                    src="images/Mojito_21_11zon.webp"
                     alt="Mojito">
             </div>
             <div class="menu-item-info">
@@ -1310,7 +1096,7 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'Mojito',
-                    'images/Mojito.png',
+                    'images/Mojito_21_11zon.webp',
                     3.00,
                     'Refreshing mojito blended with fresh mint, lime and a sparkling finish.'
                 )">
@@ -1322,7 +1108,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Mojito Flavor.png"
+                    src="images/Mojito Flavor_20_11zon.webp"
                     alt="Mojito Flavor">
             </div>
             <div class="menu-item-info">
@@ -1338,7 +1124,7 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'Mojito Flavor',
-                    'images/Mojito Flavor.png',
+                    'images/Mojito Flavor_20_11zon.webp',
                     4.00,
                     'Refreshing mojito flavor with a cool minty and zesty citrus taste.'
                 )">
@@ -1350,7 +1136,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/xxl.png"
+                    src="images/xxl_15_11zon.webp"
                     alt="XXL">
             </div>
             <div class="menu-item-info">
@@ -1366,7 +1152,7 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'XXL',
-                    'images/xxl.png',
+                    'images/xxl_15_11zon.webp',
                     1.00,
                     'Refreshing XXL Energy Drink with a bold energy boost, served ice-cold for a crisp and refreshing taste.'
                 )">
@@ -1378,7 +1164,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Sparkling water.png"
+                    src="images/Sparkling water_47_11zon.webp"
                     alt="Sparkling water">
             </div>
             <div class="menu-item-info">
@@ -1394,7 +1180,7 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'Sparkling water',
-                    'images/Sparkling water.png',
+                    'images/Sparkling water_47_11zon.webp',
                     1.50,
                     'Refreshing Sparkling Water with crisp bubbles, chilled ice and a clean, refreshing taste.'
                 )">
@@ -1429,7 +1215,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Mocha Frappe.png"
+                    src="images/Mocha Frappe_18_11zon.webp"
                     alt="Mocha Frappe">
             </div>
             <div class="menu-item-info">
@@ -1445,7 +1231,7 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'Mocha Frappe',
-                    'images/Mocha Frappe.png',
+                    'images/Mocha Frappe_18_11zon.webp',
                     5.00,
                     'Creamy mocha frappe blended with rich coffee, chocolate and chilled milk.'
                 )">
@@ -1457,7 +1243,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/White Mocha Frappe.png"
+                    src="images/White Mocha Frappe_14_11zon.webp"
                     alt="White Mocha Frappe">
             </div>
             <div class="menu-item-info">
@@ -1473,7 +1259,7 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'White Mocha Frappe',
-                    'images/White Mocha Frappe.png',
+                    'images/White Mocha Frappe_14_11zon.webp',
                     5.0,
                     'Creamy white mocha frappe blended with rich coffee, white chocolate and chilled milk.'
                 )">
@@ -1485,7 +1271,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Caramel Frappe.png"
+                    src="images/Caramel Frappe_11_11zon.webp"
                     alt="Caramel Frappe">
             </div>
             <div class="menu-item-info">
@@ -1501,7 +1287,7 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'Caramel Frappe',
-                    'images/Caramel Frappe.png',
+                    'images/Caramel Frappe_11_11zon.webp',
                     5.00,
                     'Creamy caramel frappe blended with rich coffee, caramel and chilled milk.'
                 )">
@@ -1513,7 +1299,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Ice Coffee.png"
+                    src="images/Ice Coffee_18_11zon.webp"
                     alt="Iced Latte">
             </div>
             <div class="menu-item-info">
@@ -1529,7 +1315,7 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'Iced Latte',
-                    'images/Ice Coffee.png',
+                    'images/Ice Coffee_18_11zon.webp',
                     3.00,
                     'Smooth and refreshing iced Latte with rich espresso and chilled milk.'
                 )">
@@ -1541,7 +1327,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Ice Nescafe.png"
+                    src="images/Ice Nescafe_19_11zon.webp"
                     alt="Iced Nescafe">
             </div>
             <div class="menu-item-info">
@@ -1557,7 +1343,7 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'Ice Nescafe',
-                    'images/Ice Nescafe.png',
+                    'images/Ice Nescafe_19_11zon.webp',
                     3.00,
                     'Refreshing iced Nescafe coffee with a smooth and rich coffee flavor.'
                 )">
@@ -1568,7 +1354,7 @@
                <!-- Iced Mocha -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Iced Mocha.png" alt="Iced Mocha">
+                <img src="images/Iced Mocha_21_11zon.webp" alt="Iced Mocha">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">  Iced Mocha </div>
@@ -1576,7 +1362,7 @@
             </div>
             <button
                 type="button"  class="add-to-cart-button" onclick="openItemModal(  'Iced Mocha',
-                    'images/Iced Mocha.png', 4.00,
+                    'images/Iced Mocha_21_11zon.webp', 4.00,
                     'Rich and creamy iced mocha combining bold coffee and chocolate with ice, topped with whipped cream, chocolate sauce, and chocolate shavings.'  )">
                 + </button>
         </div>
@@ -1584,7 +1370,7 @@
               <!-- Iced White Mocha -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Iced White Mocha.png" alt="Iced White Mocha">
+                <img src="images/Iced White Mocha_25_11zon.webp" alt="Iced White Mocha">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">  Iced White Mocha </div>
@@ -1592,7 +1378,7 @@
             </div>
             <button
                 type="button"  class="add-to-cart-button" onclick="openItemModal(  'Iced White Mocha',
-                    'images/Iced White Mocha.png', 4.00,
+                    'images/Iced White Mocha_25_11zon.webp', 4.00,
                     'Creamy iced white mocha made with smooth espresso, white chocolate, and chilled milk over ice, topped with whipped cream and a delicate white chocolate drizzle.'  )">
                 + </button>
         </div>
@@ -1600,7 +1386,7 @@
                 <!-- Iced Matcha -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Iced Matcha.png" alt="Iced Matcha">
+                <img src="images/Iced Matcha_20_11zon.webp" alt="Iced Matcha">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">  Iced Matcha </div>
@@ -1608,7 +1394,7 @@
             </div>
             <button
                 type="button"  class="add-to-cart-button" onclick="openItemModal(  'Iced Matcha',
-                    'images/Iced Matcha.png', 4.00,
+                    'images/Iced Matcha_20_11zon.webp', 4.00,
                     'Refreshing iced matcha made with smooth premium matcha and chilled milk over ice, offering a creamy texture and naturally earthy green tea flavor.'  )">
                 + </button>
         </div>
@@ -1616,7 +1402,7 @@
            <!-- Iced Americano -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Americano1.png" alt="Iced Americano">
+                <img src="images/Americano1_3_11zon.webp" alt="Iced Americano">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">  Iced Americano </div>
@@ -1624,7 +1410,7 @@
             </div>
             <button
                 type="button"  class="add-to-cart-button" onclick="openItemModal(  'Iced Americano',
-                    'images/Americano1.png', 2.00,
+                    'images/Americano1_3_11zon.webp', 2.00,
                     'Bold and refreshing iced Americano made with rich espresso and chilled water over ice, delivering a smooth, crisp coffee flavor.'  )">
                 + </button>
         </div>
@@ -1632,7 +1418,7 @@
                <!-- Iced Spanish Latte -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Iced Spanish Latte.png" alt="Iced Spanish Latte">
+                <img src="images/Iced Spanish Latte_22_11zon.webp" alt="Iced Spanish Latte">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name"> Iced Spanish Latte</div>
@@ -1640,7 +1426,7 @@
             </div>
             <button
                 type="button"  class="add-to-cart-button" onclick="openItemModal(  'Iced Spanish Latte',
-                    'images/Iced Spanish Latte.png', 3.00,
+                    'images/Iced Spanish Latte_22_11zon.webp', 3.00,
                     'Creamy iced Spanish latte made with rich espresso, chilled milk, and sweetened condensed milk, served over ice for a smooth and indulgent flavor.'  )">
                 + </button>
         </div>
@@ -1648,7 +1434,7 @@
                <!-- Vanilla Frappe -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Vanilla Frappe.png" alt="Vanilla Frappe">
+                <img src="images/Vanilla Frappe_10_11zon.webp" alt="Vanilla Frappe">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name"> Vanilla Frappe</div>
@@ -1656,7 +1442,7 @@
             </div>
             <button
                 type="button"  class="add-to-cart-button" onclick="openItemModal(  'Vanilla Frappe',
-                    'images/Vanilla Frappe.png', 5.00,
+                    'images/Vanilla Frappe_10_11zon.webp', 5.00,
                     'Creamy vanilla frappe blended with rich coffee, smooth milk, and sweet vanilla, topped with whipped cream and a delicate vanilla drizzle.'  )">
                 + </button>
         </div>
@@ -1664,7 +1450,7 @@
                       <!-- Iced Latte Flavore -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Iced Spanish Latte.png" alt="Iced Latte Flavore">
+                <img src="images/Iced Spanish Latte_22_11zon.webp" alt="Iced Latte Flavore">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name"> Iced Latte Flavore</div>
@@ -1672,7 +1458,7 @@
             </div>
             <button
                 type="button"  class="add-to-cart-button" onclick="openItemModal(  'Iced Latte Flavore',
-                    'images/Iced Spanish Latte.png', 3.00,
+                    'images/Iced Spanish Latte_22_11zon.webp', 3.00,
                     'Creamy iced latte blended with rich espresso, chilled milk, and your favorite flavor, served over ice for a smooth and refreshing taste.'  )">
                 + </button>
         </div>
@@ -1680,7 +1466,7 @@
                   <!-- Spanish Latte -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Iced Spanish Latte.png" alt="Spanish Latte">
+                <img src="images/Iced Spanish Latte_22_11zon.webp" alt="Spanish Latte">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name"> Spanish Latte</div>
@@ -1688,7 +1474,7 @@
             </div>
             <button
                 type="button"  class="add-to-cart-button" onclick="openItemModal(  'Spanish Latte',
-                    'images/Iced Spanish Latte.png', 3.00,
+                    'images/Iced Spanish Latte_22_11zon.webp', 3.00,
                     'Creamy Spanish latte made with rich espresso, steamed milk, and sweetened condensed milk, offering a smooth, sweet, and indulgent flavor.'  )">
                 + </button>
         </div>
@@ -1696,7 +1482,7 @@
                 <!-- Iced Mocha Latte -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Iced Mocha.png" alt="Iced Mocha Latte">
+                <img src="images/Iced Matcha_20_11zon.webp" alt="Iced Mocha Latte">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name"> Iced Mocha Latte</div>
@@ -1704,7 +1490,7 @@
             </div>
             <button
                 type="button"  class="add-to-cart-button" onclick="openItemModal(  'Iced Mocha Latte',
-                    'images/Iced Mocha.png', 3.50,
+                    'images/Iced Matcha_20_11zon.webp', 3.50,
                     'Creamy iced mocha latte made with rich espresso, chilled milk, and smooth chocolate, served over ice for a refreshing and indulgent taste.'  )">
                 + </button>
         </div>
@@ -1737,7 +1523,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Red Energy Mix.png"
+                    src="images/Red Energy Mix_41_11zon.webp"
                     alt="Red Energy Mix">
             </div>
             <div class="menu-item-info">
@@ -1753,7 +1539,7 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'Red Energy Mix',
-                    'images/Red Energy Mix.png',
+                    'images/Red Energy Mix_41_11zon.webp',
                     4.00,
                     'Refreshing energy mix with a bold fruity flavor and an energizing finish.'
                 )">
@@ -1765,7 +1551,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Dragon Fruit.png"
+                    src="images/Dragon Fruit_8_11zon.webp"
                     alt="Dragon Fruit">
             </div>
             <div class="menu-item-info">
@@ -1781,7 +1567,7 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'Dragon Fruit',
-                    'images/Dragon Fruit.png',
+                    'images/Dragon Fruit_8_11zon.webp',
                     5.00,
                     'Refreshing dragon fruit drink with a sweet, tropical and naturally fruity flavor.'
                 )">
@@ -1793,7 +1579,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Passion Fruit.png"
+                    src="images/Passion Fruit_30_11zon.webp"
                     alt="Passion Fruit">
             </div>
             <div class="menu-item-info">
@@ -1809,7 +1595,7 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'Passion Fruit',
-                    'images/Passion Fruit.png',
+                    'images/Passion Fruit_30_11zon.webp',
                     5.00,
                     'Refreshing passion fruit drink with a sweet, tangy and tropical flavor.'
                 )">
@@ -1821,7 +1607,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Coconut Wave.png"
+                    src="images/Coconut Wave_19_11zon.webp"
                     alt="Coconut Wave">
             </div>
             <div class="menu-item-info">
@@ -1837,7 +1623,7 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'Coconut Wave',
-                    'images/Coconut Wave.png',
+                    'images/Coconut Wave_19_11zon.webp',
                     5.00,
                     'Refreshing coconut drink with a smooth, creamy and tropical flavor.'
                 )">
@@ -1849,7 +1635,7 @@
         <div class="menu-item-card">
             <div class="menu-item-image">
                 <img
-                    src="images/Pina Colada.png"
+                    src="images/Pina Colada_37_11zon.webp"
                     alt="Pina Colada">
             </div>
             <div class="menu-item-info">
@@ -1865,7 +1651,7 @@
                 class="add-to-cart-button"
                 onclick="openItemModal(
                     'Pina Colada',
-                    'images/Pina Colada.png',
+                    'images/Pina Colada_37_11zon.webp',
                     4.00,
                     'Creamy and refreshing Piña Colada with tropical pineapple and coconut flavors.'
                 )">
@@ -1889,7 +1675,7 @@
         <!-- Chocolate -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Chocolate.png" alt="Chocolate">
+                <img src="images/Chocolate_18_11zon.webp" alt="Chocolate">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Chocolate</div>
@@ -1899,7 +1685,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Chocolate',
-                        'images/Chocolate.png',
+                        'images/Chocolate_18_11zon.webp',
                         4.00,
                         'Rich and creamy chocolate drink with a smooth, indulgent flavor.'
                     )">
@@ -1910,7 +1696,7 @@
         <!-- Strawberry -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Strawberry.png" alt="Strawberry">
+                <img src="images/Strawberry_48_11zon.webp" alt="Strawberry">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Strawberry</div>
@@ -1920,7 +1706,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Strawberry',
-                        'images/Strawberry.png',
+                        'images/Strawberry_48_11zon.webp',
                         4.00,
                         'Creamy strawberry milkshake with a sweet, fruity and refreshing flavor.'
                     )">
@@ -1931,7 +1717,7 @@
         <!-- Lotus -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Lotus.png" alt="Lotus">
+                <img src="images/Lotus_6_11zon.webp" alt="Lotus">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Lotus</div>
@@ -1941,7 +1727,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Lotus',
-                        'images/Lotus.png',
+                        'images/Lotus_6_11zon.webp',
                         5.00,
                         'Creamy Lotus milkshake with a rich biscuit flavor and a smooth, indulgent finish.'
                     )">
@@ -1953,7 +1739,7 @@
         <div class="menu-item-card">
 
             <div class="menu-item-image">
-                <img src="images/Oreo.png" alt="Oreo">
+                <img src="images/Oreo_29_11zon.webp" alt="Oreo">
             </div>
 
             <div class="menu-item-info">
@@ -1965,7 +1751,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Oreo',
-                        'images/Oreo.png',
+                        'images/Oreo_29_11zon.webp',
                         5.00,
                         'Creamy Oreo milkshake blended with rich chocolate cookies and smooth milk.'
                     )">
@@ -1976,7 +1762,7 @@
                 <!--  Vanilla          -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Vanilla Milkshake.png" alt="Vanilla">
+                <img src="images/Vanilla Milkshake_12_11zon.webp" alt="Vanilla">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Vanilla</div>
@@ -1986,7 +1772,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Vanilla',
-                        'images/Vanilla Milkshake.png',
+                        'images/Vanilla Milkshake_12_11zon.webp',
                         4.00,
                         'Creamy vanilla milkshake topped with fluffy whipped cream, sweet vanilla drizzle and crunchy biscuit crumbs.'
                     )">
@@ -1997,7 +1783,7 @@
                      <!--  Caramel          -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Caramel.png" alt="Caramel">
+                <img src="images/Caramel_13_11zon.webp" alt="Caramel">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Caramel</div>
@@ -2007,7 +1793,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Caramel',
-                        'images/Vanilla Milkshake.png',
+                        'images/Caramel_13_11zon.webp',
                         4.00,
                         'A creamy caramel milkshake topped with a layer of light, fluffy whipped cream and rich drizzles of caramel sauce.'
                     )">
@@ -2032,18 +1818,18 @@
         <!-- Peach -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Peach1.png" alt="Peach">
+                <img src="images/Peach1_35_11zon.webp" alt="Peach">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Peach</div>
-                <div class="menu-item-price">$3.50</div>
+                <div class="menu-item-price">$4.00</div>
             </div>
             <button type="button"
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Peach',
-                        'images/Peach1.png',
-                        3.50,
+                        'images/Peach1_35_11zon.webp',
+                        4.00,
                         'Creamy peach smoothie with a sweet, juicy and refreshing flavor.'
                     )">
                 +
@@ -2054,20 +1840,20 @@
         <div class="menu-item-card">
 
             <div class="menu-item-image">
-                <img src="images/Passion Fruit.png" alt="Passion">
+                <img src="images/Passion Fruit_30_11zon.webp" alt="Passion">
             </div>
 
             <div class="menu-item-info">
                 <div class="menu-item-name">Passion</div>
-                <div class="menu-item-price">$5.00</div>
+                <div class="menu-item-price">$4.00</div>
             </div>
 
             <button type="button"
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Passion',
-                        'images/Passion Fruit.png',
-                        5.00,
+                        'images/Passion Fruit_30_11zon.webp',
+                        4.00,
                         'Creamy passion fruit smoothie with a sweet, tangy and refreshing tropical flavor.'
                     )">
                 +
@@ -2078,7 +1864,7 @@
         <div class="menu-item-card">
 
             <div class="menu-item-image">
-                <img src="images/Mango.png" alt="Mango">
+                <img src="images/Mango_8_11zon.webp" alt="Mango">
             </div>
 
             <div class="menu-item-info">
@@ -2090,7 +1876,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Mango',
-                        'images/Mango.png',
+                        'images/Mango_8_11zon.webp',
                         4.00,
                         'Creamy mango smoothie with a sweet, tropical and refreshing flavor.'
                     )">
@@ -2101,18 +1887,18 @@
         <!-- Strawberry -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Strawberry1.png" alt="Strawberry">
+                <img src="images/Strawberry1_1_11zon.webp" alt="Strawberry">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Strawberry</div>
-                <div class="menu-item-price">$3.50</div>
+                <div class="menu-item-price">$4.00</div>
             </div>
             <button type="button"
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Strawberry',
-                        'images/Strawberry1.png',
-                        3.50,
+                        'images/Strawberry1_1_11zon.webp',
+                        4.00,
                         'Creamy strawberry smoothie with a sweet, fruity and refreshing flavor.'
                     )">
                 +
@@ -2135,7 +1921,7 @@
         <!-- Pasta Four Cheese -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Pasta Four Cheese.png" alt="Pasta Four Cheese">
+                <img src="images/Pasta Four Cheese_31_11zon.webp" alt="Pasta Four Cheese">
             </div>
 
             <div class="menu-item-info">
@@ -2147,7 +1933,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Pasta Four Cheese',
-                        'images/Pasta Four Cheese.png',
+                        'images/Pasta Four Cheese_31_11zon.webp',
                         5.00,
                         'Creamy pasta tossed in a rich blend of four delicious cheeses.'
                     )">
@@ -2159,7 +1945,7 @@
         <div class="menu-item-card">
 
             <div class="menu-item-image">
-                <img src="images/Corn Classic.png" alt="Corn Classic">
+                <img src="images/Corn Classic_24_11zon.webp" alt="Corn Classic">
             </div>
 
             <div class="menu-item-info">
@@ -2171,7 +1957,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Corn Classic',
-                        'images/Corn Classic.png',
+                        'images/Corn Classic_24_11zon.webp',
                         4.00,
                         'Classic creamy pasta with sweet corn and a smooth, savory sauce.'
                     )">
@@ -2183,7 +1969,7 @@
         <div class="menu-item-card">
 
             <div class="menu-item-image">
-                <img src="images/Cheese Corn.png" alt="Cheese Corn">
+                <img src="images/Cheese Corn_15_11zon.webp" alt="Cheese Corn">
             </div>
 
             <div class="menu-item-info">
@@ -2195,7 +1981,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Cheese Corn',
-                        'images/Cheese Corn.png',
+                        'images/Cheese Corn_15_11zon.webp',
                         5.00,
                         'Creamy pasta with sweet corn and a rich blend of melted cheese.'
                     )">
@@ -2206,7 +1992,7 @@
         <!-- Pasta Pesto -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Pasta Pesto.png" alt="Pasta Pesto">
+                <img src="images/Pasta Pesto_32_11zon.webp" alt="Pasta Pesto">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Pasta Pesto</div>
@@ -2216,7 +2002,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Pasta Pesto',
-                        'images/Pasta Pesto.png',
+                        'images/Pasta Pesto_32_11zon.webp',
                         5.50,
                         'Creamy pasta tossed in a fresh and aromatic basil pesto sauce.'
                     )">
@@ -2227,7 +2013,7 @@
           <!-- Pasta Cheddar Cheese -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Pasta Four Cheese.png" alt="Pasta Cheddar Cheese">
+                <img src="images/Pasta Four Cheese_31_11zon.webp" alt="Pasta Cheddar Cheese">
             </div>
 
             <div class="menu-item-info">
@@ -2239,7 +2025,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Pasta Cheddar Cheese',
-                        'images/Pasta Four Cheese.png',
+                        'images/Pasta Four Cheese_31_11zon.webp',
                         5.00,
                         'Creamy pasta tossed in a rich blend of Cheddar delicious cheeses.'
                     )">
@@ -2265,7 +2051,7 @@
         <div class="menu-item-card">
 
             <div class="menu-item-image">
-                <img src="images/Oreo Crêpe.png" alt="Oreo Crêpe">
+                <img src="images/Oreo Crêpe_28.webp" alt="Oreo Crêpe">
             </div>
 
             <div class="menu-item-info">
@@ -2277,7 +2063,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Oreo Crêpe',
-                        'images/Oreo Crêpe.png',
+                        'images/Oreo Crêpe_28.webp',
                         5.00,
                         'Delicious crepe filled with creamy Oreo, chocolate and a smooth, indulgent finish.'
                     )">
@@ -2289,7 +2075,7 @@
         <div class="menu-item-card">
 
             <div class="menu-item-image">
-                <img src="images/Nutella Crêpe.png" alt="Nutella Crêpe">
+                <img src="images/Nutella Crêpe_26.webp" alt="Nutella Crêpe">
             </div>
 
             <div class="menu-item-info">
@@ -2301,7 +2087,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Nutella Crêpe',
-                        'images/Nutella Crêpe.png',
+                        'images/Nutella Crêpe_26.webp',
                         5.00,
                         'Delicious crepe filled with rich Nutella and a smooth, chocolatey finish.'
                     )">
@@ -2313,7 +2099,7 @@
         <div class="menu-item-card">
 
             <div class="menu-item-image">
-                <img src="images/Lotus Crêpe.png" alt="Lotus Crêpe">
+                <img src="images/Lotus Crêpe_5.webp" alt="Lotus Crêpe">
             </div>
 
             <div class="menu-item-info">
@@ -2325,7 +2111,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Lotus Crêpe',
-                        'images/Lotus Crêpe.png',
+                        'images/Lotus Crêpe_5.webp',
                         5.00,
                         'Delicious crepe filled with creamy Lotus spread and a rich caramelized biscuit flavor.'
                     )">
@@ -2337,7 +2123,7 @@
         <div class="menu-item-card">
 
             <div class="menu-item-image">
-                <img src="images/Brownie Crêpe.png" alt="Brownie Crêpe">
+                <img src="images/Brownie Crêpe_8.webp" alt="Brownie Crêpe">
             </div>
 
             <div class="menu-item-info">
@@ -2349,7 +2135,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Brownie Crêpe',
-                        'images/Brownie Crêpe.png',
+                        'images/Brownie Crêpe_8.webp',
                         4.00,
                         'Delicious crepe filled with rich brownie pieces and smooth chocolate sauce.'
                     )">
@@ -2361,7 +2147,7 @@
         <div class="menu-item-card">
 
             <div class="menu-item-image">
-                <img src="images/Kinder Crêpe.png" alt="Kinder Crêpe">
+                <img src="images/Kinder Crêpe_27.webp" alt="Kinder Crêpe">
             </div>
 
             <div class="menu-item-info">
@@ -2373,7 +2159,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Kinder Crêpe',
-                        'images/Kinder Crêpe.png',
+                        'images/Kinder Crêpe_27.webp',
                         5.00,
                         'Delicious crepe filled with creamy Kinder chocolate and a rich, indulgent finish.'
                     )">
@@ -2385,20 +2171,20 @@
         <div class="menu-item-card">
 
             <div class="menu-item-image">
-                <img src="images/Twix Crêpe.png" alt="Twix Crêpe">
+                <img src="images/Twix Crêpe_9.webp" alt="Twix Crêpe">
             </div>
 
             <div class="menu-item-info">
                 <div class="menu-item-name">Twix Crêpe</div>
-                <div class="menu-item-price">$4.50</div>
+                <div class="menu-item-price">$4.00</div>
             </div>
 
             <button type="button"
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Twix Crêpe',
-                        'images/Twix Crêpe.png',
-                        4.50,
+                        'images/Twix Crêpe_9.webp',
+                        4.00,
                         'Delicious crepe filled with rich Twix chocolate, caramel and crunchy biscuit.'
                     )">
                 +
@@ -2408,18 +2194,18 @@
         <!-- Mars Crêpe -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Mars Crêpe.png" alt="Mars Crêpe">
+                <img src="images/Mars Crêpe_9.webp" alt="Mars Crêpe">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Mars Crêpe</div>
-                <div class="menu-item-price">$4.50</div>
+                <div class="menu-item-price">$4.00</div>
             </div>
             <button type="button"
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Mars Crêpe',
-                        'images/Mars Crêpe.png',
-                        4.50,
+                        'images/Mars Crêpe_9.webp',
+                        4.00,
                         'Delicious crepe filled with rich Mars chocolate, caramel and soft nougat.'
                     )">
                 +
@@ -2429,7 +2215,7 @@
         <!-- Futcinnie Crêpe -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Digestive Crêpe.png" alt="Futcinnie Crêpe">
+                <img src="images/Digestive Crêpe_6.webp" alt="Futcinnie Crêpe">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Futcinnie Crêpe</div>
@@ -2439,7 +2225,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Futcinnie Crêpe',
-                        'images/Digestive Crêpe.png',
+                        'images/Digestive Crêpe_6.webp',
                         5.00,
                         'Delicious crepe filled with creamy Futcinnie biscuits and a rich, crunchy biscuit flavor.'
                     )">
@@ -2450,7 +2236,7 @@
        <!-- Fruit Crêpe -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Fruit Crêpe.png" alt="Fruit Crêpe">
+                <img src="images/Fruit Crêpe_13.webp" alt="Fruit Crêpe">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Fruit Crêpe</div>
@@ -2460,7 +2246,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Fruit Crêpe',
-                        'images/Fruit Crêpe.png',
+                        'images/Fruit Crêpe_13.webp',
                         5.00,
                         'Delicious crepe filled with fresh seasonal fruits and a sweet, refreshing flavor.'
                     )">
@@ -2471,18 +2257,18 @@
   <!-- KitKat Crêpe -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Chocolate Crêpe.png" alt="KitKat Crêpe">
+                <img src="images/Chocolate Crêpe_17.webp" alt="KitKat Crêpe">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">KitKat Crêpe</div>
-                <div class="menu-item-price">$5.00</div>
+                <div class="menu-item-price">$4.00</div>
             </div>
             <button type="button"
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'KitKat Crêpe',
-                        'images/Chocolate Crêpe.png',
-                        5.00,
+                        'images/Chocolate Crêpe_17.webp',
+                       4.00,
                         'Delicious crepe filled with rich KitKat and a smooth, indulgent finish.'
                     )">
                 +
@@ -2504,7 +2290,7 @@
         <!-- Labneh and Vegetable Samouna -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Labneh and Vegetable Samouna.png" alt="Labneh and Vegetable Samouna">
+                <img src="images/Labneh and Vegetable Samouna_1_11zon.webp" alt="Labneh and Vegetable Samouna">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Labneh & Vegetable </div>
@@ -2514,7 +2300,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Labneh and Vegetable Samouna',
-                        'images/Labneh and Vegetable Samouna.png',
+                        'images/Labneh and Vegetable Samouna_1_11zon.webp',
                         1.00,
                         'Freshly baked Samouna filled with creamy labneh and fresh vegetables.'
                     )">
@@ -2525,7 +2311,7 @@
         <!-- Tripoli Kaak -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Tripoli Kaak.png" alt="Tripoli Kaak">
+                <img src="images/Tripoli Kaak_5_11zon.webp" alt="Tripoli Kaak">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Tripoli Kaak</div>
@@ -2535,7 +2321,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Tripoli Kaak',
-                        'images/Tripoli Kaak.png',
+                        'images/Tripoli Kaak_5_11zon.webp',
                         1.50,
                         'Traditional Tripoli Kaak, freshly baked with a crisp and delicious taste.'
                     )">
@@ -2546,7 +2332,7 @@
         <!-- Turkey and cheese Samouna -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Turkey and cheese Samouna.png" alt="Turkey and cheese Samouna">
+                <img src="images/Turkey and cheese Samouna_6_11zon.webp" alt="Turkey and cheese Samouna">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Turkey & cheese </div>
@@ -2556,7 +2342,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Turkey and cheese Samouna',
-                        'images/Turkey and cheese Samouna.png',
+                        'images/Turkey and cheese Samouna_6_11zon.webp',
                         1.00,
                         'Freshly baked Samouna filled with tender turkey and melted cheese.'
                     )">
@@ -2567,7 +2353,7 @@
         <!-- Cheese and vegetable -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Cheese and vegetable.png" alt="Cheese and vegetable">
+                <img src="images/Cheese and vegetable_14_11zon.webp" alt="Cheese and vegetable">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Cheese & vegetable</div>
@@ -2577,7 +2363,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Cheese and vegetable',
-                        'images/Cheese and vegetable.png',
+                        'images/Cheese and vegetable_14_11zon.webp',
                         1.50,
                         'Freshly baked Samouna filled with melted cheese and fresh vegetables.'
                     )">
@@ -2588,7 +2374,7 @@
         <!-- Labneh and mortadella -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Labneh and mortadella.png" alt="Labneh and mortadella">
+                <img src="images/Labneh and mortadella_28_11zon.webp" alt="Labneh and mortadella">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Labneh & mortadella</div>
@@ -2598,7 +2384,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Labneh and mortadella',
-                        'images/Labneh and mortadella.png',
+                        'images/Labneh and mortadella_28_11zon.webp',
                         1.50,
                         'Freshly baked Samouna filled with creamy labneh and savory mortadella.'
                     )">
@@ -2609,7 +2395,7 @@
           <!-- Samona cheese and jam -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Samona cheese and jam.png" alt="Samona cheese and jam">
+                <img src="images/Samona cheese and jam_42_11zon.webp" alt="Samona cheese and jam">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Samona cheese and jam</div>
@@ -2619,7 +2405,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Samona cheese and jam',
-                        'images/Samona cheese and jam.png',
+                        'images/Samona cheese and jam_42_11zon.webp',
                         1.50,
                         'Freshly baked Samouna filled with creamy labneh and savory mortadella.'
                     )">
@@ -2630,7 +2416,7 @@
         <!--Croissant -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Croissant.png" alt="Croissant">
+                <img src="images/Croissant_3_11zon.webp" alt="Croissant">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Croissant</div>
@@ -2640,7 +2426,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Croissant',
-                        'images/Croissant.png',
+                        'images/Croissant_3_11zon.webp',
                         0.80,
                         'Freshly baked croissant with a buttery, flaky and golden finish.'
                     )">
@@ -2651,7 +2437,7 @@
         <!-- Donates -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Donates.png" alt="Donates">
+                <img src="images/Donates_7_11zon.webp" alt="Donates">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Donates</div>
@@ -2661,7 +2447,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Donates',
-                        'images/Donates.png',
+                        'images/Donates_7_11zon.webp',
                         2.00,
                         'Freshly baked donuts with a soft, sweet and deliciously glazed finish.'
                     )">
@@ -2672,7 +2458,7 @@
         <!-- Cookies -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/cookies.png" alt="Cookies">
+                <img src="images/cookies_23_11zon.webp" alt="Cookies">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Cookies</div>
@@ -2682,7 +2468,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Cookies',
-                        'images/cookies.png',
+                        'images/cookies_23_11zon.webp',
                         1.00,
                         'Freshly baked cookies with a soft, buttery texture and a deliciously sweet flavor.'
                     )">
@@ -2693,7 +2479,7 @@
              <!-- Eclaire -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Eclaire.png" alt="Eclaire">
+                <img src="images/Eclaire_9_11zon.webp" alt="Eclaire">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Eclaire</div>
@@ -2703,7 +2489,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Eclaire',
-                        'images/Eclaire.png',
+                        'images/Eclaire_9_11zon.webp',
                         2.00,
                         'Delicious eclair filled with smooth cream, topped with rich chocolate glaze and a touch of sweetness.'
                     )">
@@ -2727,7 +2513,7 @@
         <!-- Arabic Shawarma -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Arabic Shawarma.png" alt="Arabic Shawarma">
+                <img src="images/Arabic Shawarma_5_11zon.webp" alt="Arabic Shawarma">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Arabic Shawarma</div>
@@ -2737,7 +2523,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Arabic Shawarma',
-                        'images/Arabic Shawarma.png',
+                        'images/Arabic Shawarma_5_11zon.webp',
                         5.00,
                         'Delicious Arabic shawarma snack with tender seasoned meat, fresh vegetables and creamy sauce.'
                     )">
@@ -2748,7 +2534,7 @@
         <!-- Crispy Snack -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Crispy Snack.png" alt="Crispy Snack">
+                <img src="images/Crispy Snack_2_11zon.webp" alt="Crispy Snack">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Crispy </div>
@@ -2758,7 +2544,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Crispy Snack',
-                        'images/Crispy Snack.png',
+                        'images/Crispy Snack_2_11zon.webp',
                         4.00,
                         'Delicious crispy snack with a golden, crunchy coating and a flavorful filling.'
                     )">
@@ -2769,7 +2555,7 @@
         <!-- Escalope  -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Escalope Snack.png" alt="Escalope Snack">
+                <img src="images/Escalope Snack_10_11zon.webp" alt="Escalope Snack">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Escalope </div>
@@ -2779,7 +2565,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Escalope Snack',
-                        'images/Escalope Snack.png',
+                        'images/Escalope Snack_10_11zon.webp',
                         4.00,
                         'Delicious escalope snack with crispy golden chicken, fresh vegetables and creamy sauce.'
                     )">
@@ -2790,7 +2576,7 @@
         <!-- Zinger Snack -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Zinger Snack.png" alt="Zinger">
+                <img src="images/Zinger Snack_17_11zon.webp" alt="Zinger">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Zinger</div>
@@ -2800,7 +2586,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Zinger',
-                        'images/Zinger Snack.png',
+                        'images/Zinger Snack_17_11zon.webp',
                         5.00,
                         'Delicious Zinger snack with crispy spicy chicken, fresh vegetables and creamy sauce.'
                     )">
@@ -2811,7 +2597,7 @@
       <!-- Burger -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Burger.png" alt="Burger">
+                <img src="images/Burger_9_11zon.webp" alt="Burger">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Burger</div>
@@ -2821,7 +2607,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Burger',
-                        'images/Burger.png',
+                        'images/Burger_9_11zon.webp',
                         5.00,
                         'Juicy grilled burger served with fresh vegetables, melted cheese and a flavorful sauce.'
                     )">
@@ -2832,7 +2618,7 @@
       <!-- Sheese Burger -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Chicken Burger.png" alt="Sheese Burger">
+                <img src="images/Chicken Burger_16_11zon.webp" alt="Sheese Burger">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Sheese Burger</div>
@@ -2842,7 +2628,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Sheese Burger',
-                        'images/Chicken Burger.png',
+                        'images/Chicken Burger_16_11zon.webp',
                         6.00,
                         'Juicy Sheese burger , fresh vegetables, melted cheese and creamy sauce.'
                     )">
@@ -2853,7 +2639,7 @@
       <!-- Tawook Snack -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Tawook Snack.png" alt="Tawook Snack">
+                <img src="images/Tawook Snack_2_11zon.webp" alt="Tawook Snack">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Tawook </div>
@@ -2863,7 +2649,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Tawook Snack',
-                        'images/Tawook Snack.png',
+                        'images/Tawook Snack_2_11zon.webp',
                         4.00,
                         'Delicious Tawook snack with tender grilled chicken, fresh vegetables and creamy garlic sauce.'
                     )">
@@ -2874,7 +2660,7 @@
        <!-- Potato sandwich -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Potato sandwich.png" alt="Potato sandwich">
+                <img src="images/Potato sandwich_39_11zon.webp" alt="Potato sandwich">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Potato  </div>
@@ -2884,7 +2670,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Potato sandwich',
-                        'images/Potato sandwich.png',
+                        'images/Potato sandwich_39_11zon.webp',
                         2.50,
                         'Delicious crispy potato sandwich with golden seasoned potatoes and a flavorful creamy sauce.'
                     )">
@@ -2909,7 +2695,7 @@
         <!-- Italian Shawarma -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Italian Meal.png" alt="Italian Shawarma">
+                <img src="images/Italian Meal_26_11zon.webp" alt="Italian Shawarma">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Italian Shawarma</div>
@@ -2919,7 +2705,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Italian Shawarma',
-                        'images/Italian Meal.png',
+                        'images/Italian Meal_26_11zon.webp',
                         7.00,
                         'Delicious Italian Shawarma platter with tender grilled chicken, crispy fries, fresh vegetables and creamy Italian sauce.'
                     )">
@@ -2930,7 +2716,7 @@
         <!-- Turkish Shawarma  -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Turkish Shawarma Meal.png" alt="Turkish Shawarma ">
+                <img src="images/Turkish Shawarma Meal_8_11zon.webp" alt="Turkish Shawarma ">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Turkish Shawarma  </div>
@@ -2940,7 +2726,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Turkish Shawarma ',
-                        'images/Crispy Snack.png',
+                        'images/Turkish Shawarma Meal_8_11zon.webp',
                         7.00,
                         'Delicious Turkish Shawarma Meal with tender seasoned chicken, crispy fries, fresh salad, pickles and creamy garlic sauce.'
                     )">
@@ -2951,7 +2737,7 @@
         <!-- Mexican Shawarma  -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Mexican.png" alt="Mexican Shawarma">
+                <img src="images/Mexican_14_11zon.webp" alt="Mexican Shawarma">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Mexican Shawarma </div>
@@ -2961,7 +2747,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Mexican Shawarma',
-                        'images/Mexican.png',
+                        'images/Mexican_14_11zon.webp',
                         7.00,
                         'Delicious Mexican Shawarma Meal with tender spiced chicken, sautéed peppers, crispy fries, fresh salad and creamy sauce.'
                     )">
@@ -2972,7 +2758,7 @@
         <!-- Mexican Fajita -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Mexican Fajita.png" alt="Mexican Fajita">
+                <img src="images/Mexican Fajita_13_11zon.webp" alt="Mexican Fajita">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Mexican Fajita</div>
@@ -2982,7 +2768,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Mexican Fajita',
-                        'images/Mexican Fajita.png',
+                        'images/Mexican Fajita_13_11zon.webp',
                         7.00,
                         'Delicious Mexican Fajita Meal with tender grilled chicken, sautéed peppers and onions, crispy fries, fresh salad and creamy sauce.'
                     )">
@@ -2993,7 +2779,7 @@
       <!-- Tawook -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Tawook.png" alt="Tawook">
+                <img src="images/Tawook_3_11zon.webp" alt="Tawook">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Tawook</div>
@@ -3003,7 +2789,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Tawook',
-                        'images/Tawook.png',
+                        'images/Tawook_3_11zon.webp',
                         7.00,
                         'Delicious Tawook Meal with tender grilled chicken, charred vegetables, crispy fries, fresh salad and creamy garlic sauce.'
                     )">
@@ -3027,7 +2813,7 @@
         <!-- Curly fries -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Curly fries.png" alt="Curly fries">
+                <img src="images/Curly fries_5_11zon.webp" alt="Curly fries">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Curly fries</div>
@@ -3037,7 +2823,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Curly fries',
-                        'images/Curly fries.png',
+                        'images/Curly fries_5_11zon.webp',
                         3.00,
                         'Crispy golden curly fries seasoned to perfection, offering a deliciously crunchy texture and flavorful bite.'
                     )">
@@ -3048,7 +2834,7 @@
         <!-- Fries Box -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Fries Box.png" alt="Fries Box ">
+                <img src="images/Fries Box_12_11zon.webp" alt="Fries Box ">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Fries Box  </div>
@@ -3058,7 +2844,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Fries Box ',
-                        'images/Fries Box.png',
+                        'images/Fries Box_12_11zon.webp',
                         2.00,
                         'Crispy golden fries seasoned to perfection, with a deliciously crunchy texture and irresistible flavor.'
                     )">
@@ -3069,7 +2855,7 @@
         <!-- Wedges  -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Mexican.png" alt="Wedges">
+                <img src="images/Wedges_13_11zon.webp" alt="Wedges">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Wedges</div>
@@ -3079,7 +2865,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Wedges',
-                        'images/Mexican.png',
+                        'images/Wedges_13_11zon.webp',
                         2.00,
                         'Crispy golden potato wedges seasoned with flavorful spices, offering a crunchy outside and soft, tender inside.'
                     )">
@@ -3090,7 +2876,7 @@
         <!-- Mozzarella sticks -->
         <div class="menu-item-card">
             <div class="menu-item-image">
-                <img src="images/Mozzarella sticks.png" alt="Mozzarella sticks">
+                <img src="images/Mozzarella sticks_22_11zon.webp" alt="Mozzarella sticks">
             </div>
             <div class="menu-item-info">
                 <div class="menu-item-name">Mozzarella sticks</div>
@@ -3100,7 +2886,7 @@
                     class="add-to-cart-button"
                     onclick="openItemModal(
                         'Mozzarella sticks',
-                        'images/Mozzarella sticks.png',
+                        'images/Mozzarella sticks_22_11zon.webp',
                         3.00,
                         'Crispy golden mozzarella sticks filled with gooey melted cheese, served hot with a deliciously crunchy coating.'
                     )">
@@ -3113,311 +2899,141 @@
 <!-- =====================================================
      ITEM MODAL
 ===================================================== -->
-
-<div
-    class="item-modal"
-    id="itemModal">
-
+<div  class="item-modal" id="itemModal">
     <div class="item-modal-box">
-
         <!-- CLOSE -->
-        <button
-            type="button"
-            class="item-modal-close"
-            onclick="closeItemModal()">
-            ×
-        </button>
-
-
+        <button  type="button"  class="item-modal-close" onclick="closeItemModal()">  ×  </button>
         <!-- IMAGE -->
-        <img
-            id="modalItemImage"
-            src=""
-            alt="">
-
-
+        <img  id="modalItemImage"  src="" alt="">
         <!-- NAME -->
-        <div
-            class="modal-item-name"
-            id="modalItemName">
-        </div>
-
-
+        <div   class="modal-item-name"  id="modalItemName"> </div>
         <!-- PRICE -->
-        <div
-            class="modal-item-price"
-            id="modalItemPrice">
-        </div>
-
-
+        <div class="modal-item-price"  id="modalItemPrice"> </div>
         <!-- DESCRIPTION -->
-        <div
-            class="modal-item-description"
-            id="modalItemDescription">
-        </div>
-
-
+        <div class="modal-item-description"  id="modalItemDescription"> </div>
         <!-- QUANTITY -->
-        <div class="modal-quantity-title">
-            Quantity
-        </div>
-
+        <div class="modal-quantity-title"> Quantity </div>
         <div class="modal-quantity">
-
-            <button
-                type="button"
-                onclick="changeModalQuantity(-1)">
-                −
+            <button  type="button"  onclick="changeModalQuantity(-1)">   −
             </button>
-
-            <span id="modalQuantity">
-                1
-            </span>
-
-            <button
-                type="button"
-                onclick="changeModalQuantity(1)">
-                +
-            </button>
-
+            <span id="modalQuantity">  1 </span>
+            <button  type="button" onclick="changeModalQuantity(1)"> +  </button>
         </div>
-
-
         <!-- ADD TO CART -->
-        <button
-            type="button"
-            class="modal-add-cart-button"
-            onclick="confirmAddToCart()">
-            ADD TO CART
-        </button>
-
+        <button  type="button" class="modal-add-cart-button" onclick="confirmAddToCart()"> ADD TO CART </button>
     </div>
-
 </div>
-
-
 <!-- ================================================================================================
      SEARCH SCREEN
 ================================================================================================= -->
 <div class="search-screen" id="searchScreen">
     <div class="search-box">
         <div class="search-header">
-
-<button type="button"
-        class="search-close-button"
-        onclick="closeSearch()">
-    ←
-</button>
-            <div class="search-title">
-                Search
-            </div>
+<button type="button" class="search-close-button"  onclick="closeSearch()"> ←</button>
+            <div class="search-title"> Search  </div>
         </div>
 
         <div class="search-input-wrapper">
             <span class="search-input-icon">⌕</span>
-            <input type="text"
-                   id="menuSearchInput"
-                   class="menu-search-input"
-                   placeholder="Search menu..."
-                   autocomplete="off"
-                   oninput="searchMenuItems()">
+            <input type="text"  id="menuSearchInput" class="menu-search-input" placeholder="Search menu..."autocomplete="off" oninput="searchMenuItems()">
         </div>
-
-        <div id="searchResults"
-             class="search-results">
-            <div class="search-empty">
-                Search for an item
-            </div>
-
+        <div id="searchResults"  class="search-results">
+            <div class="search-empty"> Search for an item </div>
         </div>
-
     </div>
-
 </div>
-
 <!-- =====================================================
      CART SCREEN
 ===================================================== -->
 <div class="cart-screen" id="cartScreen">
     <div class="cart-container">
         <div class="cart-header">
-            <button type="button"
-                    class="cart-back-button"
-                    onclick="closeCart()">
-                &#8592;
-            </button>
-            <div class="cart-title">
-                Cart
-            </div>
+            <button type="button" class="cart-back-button"   onclick="closeCart()">      &#8592;  </button>
+            <div class="cart-title">  Cart </div>
         </div>
-
         <!-- CART ITEMS -->
-        <div class="cart-items-list" id="cartItemsList">
-        </div>
-
+        <div class="cart-items-list" id="cartItemsList">  </div>
         <!-- EMPTY CART -->
         <div class="cart-empty" id="cartEmpty">
-            <div class="cart-empty-icon">
-                🛒
-            </div>
-            <div class="cart-empty-title">
-                Your cart is empty
-            </div>
-            <div class="cart-empty-text">
-                Add some delicious items to your cart
-            </div>
+            <div class="cart-empty-icon">  🛒 </div>
+            <div class="cart-empty-title">   Your cart is empty </div>
+            <div class="cart-empty-text">   Add some delicious items to your cart </div>
         </div>
 
         <!-- CART FOOTER -->
         <div class="cart-footer" id="cartFooter">
             <div class="cart-summary-row">
                 <span>Subtotal</span>
-                <strong id="cartSubtotal">
-                    $0.00
-                </strong>
+                <strong id="cartSubtotal">     $0.00 </strong>
             </div>
-
             <div class="cart-summary-row">
                 <span>Delivery</span>
-                <strong id="cartTax">
-                    $0.00
-                </strong>
+                <strong id="cartTax">   $0.00 </strong>
             </div>
-
             <div class="cart-total-row">
                 <span>Total</span>
-                <strong id="cartTotal">
-                    $0.00
-                </strong>
+                <strong id="cartTotal"> $0.00  </strong>
             </div>
-
-            <button type="button"
-                    class="cart-clear-button"
-                    onclick="clearCart()">
-                CLEAR Cart
-            </button>
-
-            <button type="button"
-                    class="cart-order-button"
-                    onclick="placeOrder()">
-                PLACE ORDER
-            </button>
+            <button type="button"  class="cart-clear-button"    onclick="clearCart()">  CLEAR Cart </button>
+            <button type="button" class="cart-order-button"    onclick="placeOrder()">  PLACE ORDER  </button>
         </div>
     </div>
 </div>
-
 <!-- =====================================================
      LOCATION REQUEST MODAL
 ===================================================== -->
 <div class="location-modal" id="locationModal">
-
     <div class="location-modal-box">
-
-        <div class="location-icon">
-            📍
-        </div>
-
-        <div class="location-modal-title">
-            Your Location
-        </div>
-
+        <div class="location-icon">    📍 </div>
+        <div class="location-modal-title">  Your Location </div>
         <div class="location-modal-text">
             To complete your order, please allow us to access
             your current location.
         </div>
-
-        <button type="button"
-                class="location-allow-button"
-                onclick="requestCustomerLocation()">
-            ALLOW LOCATION
-        </button>
-
-        <button type="button"
-                class="location-cancel-button"
-                onclick="closeLocationModal()">
-            CANCEL
-        </button>
-
+        <button type="button" class="location-allow-button"  onclick="requestCustomerLocation()"> ALLOW LOCATION</button>
+        <button type="button" class="location-cancel-button"  onclick="closeLocationModal()">  CANCEL  </button>
     </div>
-
 </div>
-
 
 <!-- =====================================================
      LOCATION SUCCESS MODAL
 ===================================================== -->
 <div class="location-success-modal" id="locationSuccessModal">
-
     <div class="location-modal-box">
-
-        <div class="location-success-icon">
-            ✓
-        </div>
-
-        <div class="location-modal-title">
-            Location Selected
-        </div>
-
+        <div class="location-success-icon">  ✓ </div>
+        <div class="location-modal-title"> Location Selected </div>
         <div class="location-modal-text">
             Your location has been successfully selected.
             You can now complete your order.
         </div>
-
-        <button type="button"
-                class="location-continue-button"
-                onclick="closeLocationSuccess()">
-            CONTINUE
-        </button>
-
+        <button type="button" class="location-continue-button" onclick="closeLocationSuccess()"> CONTINUE </button>
     </div>
-
 </div>
     </main>
     <!-- =====================================================
      BOTTOM NAVIGATION
 ===================================================== -->
-
 <div class="bottom-nav">
-
     <!-- SEARCH -->
-    <button class="bottom-nav-item"
-        onclick="openSearch()">
+    <button class="bottom-nav-item" onclick="openSearch()">
         <span class="bottom-nav-icon">⌕</span>
         <span class="bottom-nav-text">Search</span>
     </button>
 
     <!-- CART -->
    <button
-    class="bottom-nav-item"
-    onclick="openCart()">
-
-    <div class="cart-icon-wrapper">
-
-        🛒
-
-        <span id="cartCount">
-            0
-        </span>
-
+    class="bottom-nav-item"onclick="openCart()">
+    <div class="cart-icon-wrapper"> 🛒 <span id="cartCount">   0 </span>
     </div>
-
     <span>Cart</span>
-
 </button>
-
     <!-- HOME -->
     <button class="bottom-nav-item" onclick="goHome()">
         <span class="bottom-nav-icon">⌂</span>
         <span class="bottom-nav-text">Home</span>
     </button>
-
 </div>
 
-
-    <!-- JavaScript -->
     <script src="script.js"></script>
-
-
 </body>
-
 </html>
